@@ -1,0 +1,71 @@
+{% extends "registration/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block meta_tags %}
+    <meta name="description" content="{% trans 'Register - fmartns.dev | Technology Portal and Link Portfolio. Create an account to access your profile.' %}">
+    <meta name="keywords" content="{% trans 'Filipe Martins, fmartns.dev, Register, Access, Security, Authentication, Programming, Development, Python, Technology, Computer Science' %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% trans 'Register - fmartns.dev' %}">
+    <meta property="og:description" content="{% trans 'Register - fmartns.dev | Technology Portal and Link Portfolio. Create an account to access your profile.' %}">
+    <meta property="og:url" content="https://www.fmartns.dev/accounts/register/">
+    <meta property="og:image" content="https://i.imgur.com/Smnq0U3.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% trans 'Register - fmartns.dev' %}">
+    <meta property="twitter:description" content="{% trans 'Register - fmartns.dev | Technology Portal and Link Portfolio. Create an account to access your profile.' %}">
+    <meta property="twitter:url" content="https://www.fmartns.dev/accounts/register/">
+    <meta property="twitter:image" content="https://i.imgur.com/Smnq0U3.png">
+{% endblock %}
+
+{% block title %} {% trans 'Register' %} {% endblock %}
+
+{% block content %}
+  <h2>{% trans 'Register' %}</h2>
+  <form method="post">
+  {% csrf_token %}
+    <div class="form-group">
+      <label for="username">{% trans "Username" %}</label><br>
+      <input type="text" name="username" class="form-control" required id="username" placeholder='{% trans "Enter your username" %}'>
+      {% if form.username.errors %}
+        <div class="alert alert-danger">
+          {{ form.username.errors }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="form-group">
+        <label for="email">{% trans 'Email' %}</label><br>
+        <input type="email" name="email" class="form-control" required id="email" placeholder='{% trans "Enter your email" %}'>
+        {% if form.email.errors %}
+          <div class="alert alert-danger">
+            {{ form.email.errors }}
+          </div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+      <label for="password1">{% trans "Password" %}</label><br>
+      <input type="password" name="password1" class="form-control" required id="password1" placeholder='{% trans "Enter your password" %}'>
+      {% if form.password1.errors %}
+        <div class="alert alert-danger">
+          {{ form.password1.errors }}
+        </div>
+      {% endif %}
+    </div>
+    <div class="form-group">
+      <label for="password2">{% trans "Confirm Password" %}</label><br>
+      <input type="password" name="password2" class="form-control" required id="password2" placeholder='{% trans "Confirm your password" %}'>
+      {% if form.password2.errors %}
+        <div class="alert alert-danger">
+          {{ form.password2.errors }}
+        </div>
+      {% endif %}
+    </div>
+    <p class="terms">{% trans "When registering, you agree to the " %}<a href="{% url 'terms' %}">{% trans 'terms of use' %}</a>.</p>
+    <button type="submit" class="btn btn-primary">Register</button>
+    <p class="signin">{% trans "Already have an account?" %} <a href="{% url 'login' %}">{% trans 'Sign in' %}</a></p>
+  </form>
+{% endblock %}

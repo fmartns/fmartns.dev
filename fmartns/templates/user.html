@@ -1,0 +1,278 @@
+{% load i18n %}
+{% load color_filters %}
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    {% load static %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>{{ user.username }} | {% trans "Links" %}</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+			overflow: hidden;
+		}
+
+		body{
+			background: {{ user_profile.secondary_color }};
+
+		}
+
+		.container{
+			flex-direction: column;
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: {{ user_profile.secondary_color }};
+			color: {{ user_profile.font_color }};
+		}
+
+		a{
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.container h3 span{
+			color: {{ user_profile.primary_color }};
+		}
+
+		.domain {
+			font-size: 30px;
+		}
+
+		.container h1{
+			font-size: 80px;
+			font-weight: 600;
+		}
+
+		.social{
+			margin: 10px;
+		}
+
+		.copy {
+			width: 25px;
+			margin-bottom: -10px;
+			margin-left: -1px;
+		}
+		
+		.notification {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-color: {{ user_profile.secondary_color }};
+			color: {{ user_profile.font_color }};
+			padding: 10px;
+			border-radius: 5px;
+			display: none;
+		}
+
+		.progress-bar {
+			height: 5px;
+			background-color: {{ user_profile.primary_color }};
+			width: 0;
+		}
+
+		img{
+			margin: 1em;
+			height: 1.5em;
+			{{ user_profile.font_color|to_css_filter }};
+			color: {{ user_profile.font_color }};
+		}
+
+		img:hover{
+			{{ user_profile.primary_color|to_css_filter }};
+		}
+
+		.botaoCopiar{
+			width: 15px;
+		}
+
+		.footer{
+			font-size: 12px;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			color: {{ user_profile.font_color }};
+			padding: 10px;
+		}
+
+		/* Smaller than standard 960 (devices and browsers) */
+		@media only screen and (max-width: 959px) {
+			.container h1{
+				font-size: 60px;
+			}
+			.container h3{
+				font-size: 24px;
+			}
+			.domain {
+				font-size: 24px;
+			}
+			.footer {
+				font-size: 6px;
+			}
+			p {
+				font-size: 15px;
+			}
+		}
+
+		/* Adicione este estilo para controlar a animação de tremor */
+		.tremor {
+			animation: shake 0.5s linear infinite;
+		}
+
+		footer {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			color: {{ user_profile.font_color }};
+			padding: 10px;
+		}
+
+		footer nav ul li {
+			display: inline;
+			font-size: 10px;
+		}
+
+		footer nav ul li a {
+			margin: 0px 2.5px;
+		}
+
+		footer nav ul li a:hover {
+			color: {{ user_profile.primary_color }};
+		}
+
+		@keyframes shake {
+			0% { transform: translate(0, 0); }
+			10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 0); }
+			20%, 40%, 60%, 80%, 100% { transform: translate(5px, 0); }
+		}
+	</style>
+	<meta name="description" content='{% trans "User links page for" %} {{ user.username }}'>
+	<meta name="author" content="{{ user.username }}">
+	<link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+	<!-- Tags Open Graph -->
+	<meta property="og:title" content="{{ user.username }} | {% trans "Links" %}">
+	<meta property="og:description" content='{% trans "User links page for" %} {{ user.username }}'>
+	<meta property="og:url" content="">
+	<meta property="og:type" content="profile">
+	<!-- Tags do Twitter Card -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@{{ user.username }}">
+	<meta name="twitter:title" content="{{ user.username }} | {% trans "Links" %}">
+	<meta name="twitter:description" content='{% trans "User links page for" %} {{ user.username }}'>
+</head>
+<body>
+	<div class="container">
+		<h3>
+            <a href="https://fmartns.dev/{{ user.username }}" id="linkParaCopiar">fmartns<span class="dev">.dev</span>/u/{{ user.username }}</a>
+			<img id="botaoCopiar" src="{% static 'icons/copy.svg' %}" class="copy">
+		</h3>
+		<h1><span class="auto-type"></span></h1>
+		<p>{% trans "Explore the links below:" %}</p>
+		<div class="social">
+			{% for user_social in user_social_media %}
+				<a href="https://{{ user_social.social_media.prefix }}{{ user_social.username }}" target="_blank">
+					<img src="/{{ user_social.social_media.icon }}" class="icon"/>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+				<li><a href="{% url 'dashboard' %}">{% trans 'Panel' %}</a></li>
+				<li><a href="{% url 'login' %}">{% trans 'Login' %}</a></li>
+				<li><a href="{% url 'register' %}">{% trans 'Register' %}</a></li>
+				<li><a href="{% url 'contact' %}">{% trans 'Contact' %}</a></li>
+				<li><a href="{% url 'terms' %}">{% trans 'Terms' %}</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed(".auto-type", {
+			strings: [
+        	"{{ user_profile.first_name }} {{ user_profile.last_name }}",
+        	"{{ user_profile.job }}",
+        	"{% if user_profile.is_student %}{% trans 'Student' %}{% endif %}",
+        	"{{ user_profile.first_name }} {{ user_profile.last_name }}"
+    	],
+		typeSpeed: 150,
+    	backSpeed: 150,
+		loop: false
+	})
+
+	function copiarTexto() {
+		var link = document.getElementById("linkParaCopiar");
+		var textarea = document.createElement("textarea");
+		textarea.value = link.textContent;
+		document.body.appendChild(textarea);
+		textarea.select();
+		textarea.setSelectionRange(0, 99999);
+		document.execCommand("copy");
+		document.body.removeChild(textarea);
+
+		var notification = document.createElement("div");
+		notification.className = "notification";
+		notification.textContent = "Link copiado com sucesso!";
+
+		var progressBar = document.createElement("div");
+		progressBar.className = "progress-bar";
+		notification.appendChild(progressBar);
+
+		document.body.appendChild(notification);
+
+		notification.style.display = "block";
+
+		var progress = 0;
+		var interval = setInterval(function() {
+			progress += 1;
+			progressBar.style.width = progress + "%";
+
+			if (progress >= 100) {
+				clearInterval(interval);
+				setTimeout(function() {
+					document.body.removeChild(notification);
+				}, 500);
+			}
+		}, 10);
+	}
+
+	var botaoCopiar = document.getElementById("botaoCopiar");
+	botaoCopiar.addEventListener("click", copiarTexto);
+
+	function playCoinSound() {
+		const audio = new Audio('/static/audio/coin.mp3');
+		audio.play();
+	}
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'm' || event.key === 'M') {
+			playCoinSound();
+		}
+	});
+
+	document.addEventListener('keydown', function(event) {
+		if (event.key === 's' || event.key === 'S') {
+			var elementToShake = document.body;
+
+			elementToShake.classList.add('tremor');
+
+			setTimeout(function() {
+				elementToShake.classList.remove('tremor');
+			}, 2500);
+		}
+	});
+	</script>
+</body>
+</html>

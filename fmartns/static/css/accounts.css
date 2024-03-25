@@ -1,0 +1,206 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background: #2b323c;
+
+}
+
+header h1 {
+    font-size: 15px;
+    color: #fff;
+    margin: 20px;
+}
+
+header h1 span {
+    color: #10f0de;
+}
+
+.accounts-container {
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 40px 60px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accounts-container h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #2b323c;
+    padding: 20px;
+}
+
+.accounts-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #c3c1c1;
+    border-radius: 3px;
+}
+
+.forget {
+    text-align: right;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.forget a {
+    text-decoration: none;
+    color: black;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+.accounts-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+    background: #10f0de;
+    cursor: pointer;
+}
+
+.terms {
+    text-align: left;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.terms a {
+    text-decoration: underline;
+    color: black;
+}
+
+.signup {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.signup a {
+    text-decoration: none;
+    color: black;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.signin {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.signin a {
+    text-decoration: none;
+    color: black;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}
+
+.login-back {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.login-back a {
+    text-decoration: none;
+    color: black;
+}
+
+.login-back a:hover {
+    text-decoration: underline;
+}
+
+.errorlist {
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+}
+
+footer nav ul li {
+	display: inline;
+	font-size: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+	margin: 0px 2.5px;
+}
+
+footer nav ul li a:hover {
+	color: #10f0de;
+}
+
+@media screen and (max-width: 959px){
+    .accounts-container{
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin-top: 60px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .accounts-container h2 {
+        font-size: 15px;
+    }
+
+    .accounts-container input {
+        padding: 5px;
+    }
+
+    .forget {
+        font-size: 10px;
+    }
+
+    .accounts-container button {
+        padding: 5px;
+    }
+
+    .signup {
+        font-size: 10px;
+    }
+
+    footer nav ul li {
+        font-size: 8px;
+    }
+
+    footer {
+        font-size: 6px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+}

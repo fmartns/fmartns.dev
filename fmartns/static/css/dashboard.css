@@ -1,0 +1,304 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #FAFAFA;
+}
+
+header {
+    width: 50px;
+    height: 100vh;
+    background-color: #2b323c;
+    color: #fff;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header li a {
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 span {
+    color: #10f0de;
+}
+
+.fmartnsdev {
+    display: none;
+}
+
+header nav ul li p {
+    display: none;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px;
+    display: flex;
+}
+
+header nav ul li img {
+    filter: invert(100%) sepia(10%) saturate(7500%) hue-rotate(263deg) brightness(116%) contrast(109%);
+}
+
+header {
+    transition: width .1s;
+}
+
+header:hover {
+    width: 200px;
+    align-items:normal;
+}
+
+header:hover .fmartnsdev {
+    display: block;
+}
+
+header:hover .fm {
+    display: none;
+}
+
+header:hover nav ul {
+    align-items: left;
+    justify-content: left;
+}
+
+header:hover nav ul li p {
+    display: block;
+    margin-left: 10px;
+}
+
+header:hover nav ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header:hover nav ul li:hover {
+    background-color: #10f0de;
+    border-radius: 5px;
+}
+
+main {
+    margin-left: 50px;
+    transition: margin-left 0.1s;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #2b323c;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    width: 350px;
+    font-size: 12px;
+}
+
+select {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    width: 350px;
+    font-size: 12px;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    width: 350px;
+    font-size: 12px;
+}
+
+input[type="color"] {
+    padding: 0;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="color"]::-moz-color-swatch {
+    border: none;
+  }
+  
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  input[type="color"]::-webkit-color-swatch {
+    border: none;
+  }
+
+.add-button {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    width: 350px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.add-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.save-button {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    width: 350px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.remove-button {
+    display: block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.delete-button {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.directory a {
+    text-decoration: none;
+    color: #2b323c;
+}
+
+.error-warn {
+    list-style: none;
+    font-size: 12px;
+}
+
+/* Index */
+
+.profile-link {
+    display: block;
+    text-decoration: none;
+    color: #2b323c;
+}
+
+.profile-link span {
+    text-decoration: underline;
+}
+
+.dash-news {
+    width: 450px;
+    height: 150px;
+    font-size: 12px;
+    background-color: #fff;
+    border-left: 5px solid #10f0de;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.dash-news-author {
+    text-align: right;
+}
+
+/* Profile */
+
+.profile-table {
+    width: 350px;
+    font-size: 12px;
+}
+
+.profile-table img {
+    width: 15px;
+}
+
+/* Administration */
+
+.admin-panel-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin-panel-option {
+    display: block;
+    padding: 20px;
+    width: 250px;
+    height: 100px;
+    background-color: #2b323c;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.admin-panel-option img {
+    padding-right: 10px;
+}
+
+.admin-panel-option h3 {
+    font-size: 18px;
+}
+
+/* Administration - Social Medias */
+
+.social-media-table {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.social-media-table img {
+    width: 20px;
+}
+
+.social-media-table {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.social-media-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

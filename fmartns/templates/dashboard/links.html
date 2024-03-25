@@ -1,0 +1,73 @@
+{% extends "dashboard/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block meta_tags %}
+    <meta name="robots" content="noindex">
+    <meta name="description" content="{% trans 'Profile Links - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta name="keywords" content="{% trans 'Filipe Martins, fmartns.dev, Dashboard, Access, Security, Authentication, Programming, Development, Python, Technology, Computer Science' %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% trans 'Profile Links - fmartns.dev' %}">
+    <meta property="og:description" content="{% trans 'Profile Links - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta property="og:url" content="https://www.fmartns.dev/accounts/login/">
+    <meta property="og:image" content="https://i.imgur.com/VGp4sE3.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% trans 'Profile Links - fmartns.dev' %}">
+{% endblock %}
+
+{% block title %} {% trans 'Profile Preferences' %} {% endblock %}
+
+{% block content %}
+  <h1>Profile Links</h1>
+  {% if form.errors %}
+      <ul class="error-warn">
+          {% for error in form.non_field_errors %}
+              <li>{{ error }}</li>
+          {% endfor %}
+          {% for field in form %}
+              {% for error in field.errors %}
+                  <li>{{ field.label }}: {{ error }}</li>
+              {% endfor %}
+          {% endfor %}
+      </ul>
+  {% endif %}
+  <form method="post">
+    {% csrf_token %}
+    
+  <label for="id_social_media">{% trans 'Social Media:' %}</label>
+  <select id="id_social_media" name="{{ form.social_media.name }}">
+      {% for social_media in form.social_media.field.queryset %}
+      <option value="{{ social_media.pk }}" {% if social_media.pk == form.social_media.value %}selected{% endif %}>{{ social_media }}</option>
+      {% endfor %}
+  </select>
+    
+  <label for="id_username">{% trans 'Username:' %}</label>
+  <input type="text" id="id_username" name="{{ form.username.name }}" value="" placeholder="{% trans 'Your username' %}">
+    
+  <button class="add-button" type="submit">{% trans 'Add' %}</button>
+  </form>
+  <label>{% trans 'Current links:' %}</label>
+  <table class="profile-table">
+    <tbody>
+        {% for user_social in user_social_media %}
+        <tr>
+            <td><img src="/{{ user_social.social_media.icon }}" alt=""></td>
+            <td>{{ user_social.social_media.prefix }}{{ user_social.username }}</td>
+            <td>
+                <form method="post" action="{% url 'user_social_media_delete' user_social.id %}">
+                    {% csrf_token %}
+                        <button class="remove-button" type="submit" onclick="return confirm('Remove?')">{% trans 'Remove' %}</button>
+                  </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}
+

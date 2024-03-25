@@ -1,0 +1,66 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    {% load static %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>{% trans "Contato" %} | fmartns.dev</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<meta name="description" content='{% trans "fmartns.dev | Your platform for storing links and your daily technology news portal." %}'>
+	<meta name="author" content="Filipe Martins">
+	<link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+	<!-- Tags Open Graph -->
+	<meta property="og:title" content='{% trans "fmartns.dev | Technology portal" %}'>
+	<meta property="og:description" content='{% trans "fmartns.dev | Your platform for storing links and your daily technology news portal." %}'>
+	<meta property="og:image" content="{% static 'img/banner.png' %}">
+	<meta property="og:url" content="https://fmartns.dev">
+	<meta property="og:type" content="site">
+	<!-- Tags do Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@fmartnss">
+	<meta name="twitter:title" content='{% trans "fmartns.dev | Technology portal" %}'>
+	<meta name="twitter:description" content='{% trans "fmartns.dev | Your platform for storing links and your daily technology news portal." %}'>
+	<meta name="twitter:image" content="{% static 'img/banner.png' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'index' %}"><h1>fmartns<span>.dev</span></h1></a>
+    </header>
+    <main>
+        <div class="contact-container">
+            <h2>{% trans 'Contact' %}</h2>
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            <form method="post">
+                {% csrf_token %}
+                <label for="id_name">{% trans 'Name' %}</label>
+                <input id="id_name" type="text" name="name" value="{{ form.name.value|default:'' }}" placeholder="Filipe Martins">
+            
+                <label for="id_email">{% trans 'Email' %}</label>
+                <input id="id_email" type="email" name="email" value="{{ form.email.value|default:'' }}" placeholder="hello@fmartns.dev">
+            
+                <label for="id_message">{% trans 'Message' %}</label>
+                <textarea id="id_message" name="message" placeholder="bla bla bla">{{ form.message.value|default:'' }}</textarea>
+            
+                <button type="submit">{% trans 'Send' %}</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+		<nav>
+			<ul>
+				<li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+				<li><a href="{% url 'dashboard' %}">{% trans 'Panel' %}</a></li>
+				<li><a href="{% url 'login' %}">{% trans 'Login' %}</a></li>
+				<li><a href="{% url 'register' %}">{% trans 'Register' %}</a></li>
+				<li><a href="{% url 'contact' %}">{% trans 'Contact' %}</a></li>
+				<li><a href="{% url 'terms' %}">{% trans 'Terms' %}</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

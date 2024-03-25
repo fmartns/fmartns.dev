@@ -1,0 +1,46 @@
+{% extends "registration/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block meta_tags %}
+    <meta name="description" content="{% trans 'Login - fmartns.dev | Technology Portal and Link Portfolio. Log in to access your profile.' %}">
+    <meta name="keywords" content="{% trans 'Filipe Martins, fmartns.dev, Login, Access, Security, Authentication, Programming, Development, Python, Technology, Computer Science' %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% trans 'Login - fmartns.dev' %}">
+    <meta property="og:description" content="{% trans 'Login - fmartns.dev | Technology Portal and Link Portfolio. Log in to access your profile.' %}">
+    <meta property="og:url" content="https://www.fmartns.dev/accounts/login/">
+    <meta property="og:image" content="https://i.imgur.com/VGp4sE3.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% trans 'Login - fmartns.dev' %}">
+    <meta property="twitter:description" content="{% trans 'Login - fmartns.dev | Technology Portal and Link Portfolio. Log in to access your profile.' %}">
+    <meta property="twitter:url" content="https://www.fmartns.dev/accounts/login/">
+    <meta property="twitter:image" content="https://i.imgur.com/VGp4sE3.png">
+{% endblock %}
+
+{% block title %} {% trans 'Login' %} {% endblock %}
+
+{% block content %}
+  <h2>{% trans 'Log in' %}</h2>
+  <form method="post">
+  {% csrf_token %}
+  {% if form.errors %}
+    {{form.non_field_errors}}
+  {% endif %}
+    <div class="form-group">
+      <label for="username">{% trans "Username" %}</label><br>
+      <input type="text" name="username" class="form-control" required id="username" placeholder='{% trans "Enter your username" %}'>
+    </div>
+    <div class="form-group">
+      <label for="password">{% trans "Password" %}</label><br>
+      <input type="password" name="password" class="form-control" required id="password" placeholder='{% trans "Enter your password" %}'>
+      <p class="forget"><a href="{% url 'password_reset' %}">{% trans 'Forgot password?' %}</a></p>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <p class="signup">{% trans "Don't have account?" %} <a href="{% url 'register' %}">{% trans 'Sign up' %}</a></p>
+  </form>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "dashboard/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block meta_tags %}
+    <meta name="robots" content="noindex">
+    <meta name="description" content="{% trans 'Administration | Social Media - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta name="keywords" content="{% trans 'Filipe Martins, fmartns.dev, Dashboard, Access, Security, Authentication, Programming, Development, Python, Technology, Computer Science' %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% trans 'Administration | Social Media - fmartns.dev' %}">
+    <meta property="og:description" content="{% trans 'Administration | Social Media - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta property="og:url" content="https://www.fmartns.dev/accounts/login/">
+    <meta property="og:image" content="https://i.imgur.com/VGp4sE3.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% trans 'Administration | Social Media - fmartns.dev' %}">
+{% endblock %}
+
+{% block title %} {% trans 'Dashboard' %} {% endblock %}
+
+{% block content %}
+
+<p class="directory"><a href="{% url 'administration' %}">{% trans 'Administration' %}</a> > <a href="{% url 'social_media_list' %}"> Social Medias </a> > Add/Edit</p>
+<h1>{% if form.instance.pk %}Editar{% else %}Adicionar{% endif %} Rede Social</h1>
+
+<form method="post" class="social-media-form" enctype="multipart/form-data">
+  {% csrf_token %}
+  <p>
+    <label for="id_name">{% trans 'Social Media:' %}</label>
+    <input type="text" name="name" maxlength="100" required id="id_name" placeholder="Instagram">
+  </p>
+  <p>
+    <label for="id_prefix">{% trans 'Prefix: ' %}</label>
+    <input type="text" name="prefix" maxlength="100" required id="id_prefix" placeholder="https://instagram.com/">
+    
+    
+  </p>
+  <p>
+    <label for="id_icon">{% trans 'Icon: ' %}</label>
+    <input type="file" name="icon" required id="id_icon">
+  </p>
+  <button class="add-button" type="submit">{% if form.instance.pk %}{% trans 'Save' %}{% else %}{% trans 'Add' %}{% endif %}</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="noindex">
+    <title>Mensagem de Contato</title>
+</head>
+<body>
+    <h1>Você recebeu uma nova mensagem de {{ name }}</h1>
+    <p>Email: {{ email }}</p>
+    <p>Mensagem:</p>
+    <p>{{ message }}</p>
+</body>
+</html>

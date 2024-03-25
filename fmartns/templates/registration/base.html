@@ -1,0 +1,35 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block meta_tags %}{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} | fmartns.dev</title>
+    <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'index' %}"><h1>fmartns<span>.dev</span></h1></a>
+    </header>
+    <main>
+        <div class="accounts-container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+    <footer>
+		<nav>
+			<ul>
+				<li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+				<li><a href="{% url 'dashboard' %}">{% trans 'Panel' %}</a></li>
+				<li><a href="{% url 'login' %}">{% trans 'Login' %}</a></li>
+				<li><a href="{% url 'register' %}">{% trans 'Register' %}</a></li>
+				<li><a href="{% url 'contact' %}">{% trans 'Contact' %}</a></li>
+                <li><a href="{% url 'terms' %}">{% trans 'Terms' %}</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

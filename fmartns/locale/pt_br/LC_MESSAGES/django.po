@@ -1,0 +1,868 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-24 17:38-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\dashboard\forms.py:23
+msgid "You can only select up to 5 social media accounts."
+msgstr "Você só pode selecionar até 5 contas de redes sociais."
+
+#: .\dashboard\views.py:94
+msgid "Your password has been changed successfully!"
+msgstr "Sua senha foi alterada com sucesso!"
+
+#: .\main\views.py:53
+msgid "Your message has been sent successfully!"
+msgstr "Sua mensagem foi enviada com sucesso!"
+
+#: .\templates\contact.html:8 .\templates\terms.html:8
+msgid "Contato"
+msgstr "Contato"
+
+#: .\templates\contact.html:10 .\templates\contact.html:15
+#: .\templates\contact.html:23 .\templates\index.html:10
+#: .\templates\index.html:15 .\templates\index.html:23
+#: .\templates\terms.html:10 .\templates\terms.html:15
+#: .\templates\terms.html:23
+#, fuzzy
+#| msgid ""
+#| "fmartns.dev | Sua plataforma para armazenar links e seu portal de "
+#| "notícias tecnológicas diárias."
+msgid ""
+"fmartns.dev | Your platform for storing links and your daily technology news "
+"portal."
+msgstr ""
+"fmartns.dev | Sua plataforma para armazenar links e seu portal de notícias "
+"tecnológicas diárias."
+
+#: .\templates\contact.html:14 .\templates\contact.html:22
+#: .\templates\index.html:14 .\templates\index.html:22
+#: .\templates\terms.html:14 .\templates\terms.html:22
+#, fuzzy
+#| msgid "fmartns.dev | Portal de tecnologia"
+msgid "fmartns.dev | Technology portal"
+msgstr "fmartns.dev | Portal de tecnologia"
+
+#: .\templates\contact.html:32 .\templates\contact.html:60
+#: .\templates\index.html:44 .\templates\registration\base.html:29
+#: .\templates\terms.html:54 .\templates\user.html:196
+msgid "Contact"
+msgstr "Contato"
+
+#: .\templates\contact.html:40 .\templates\dashboard\social_media_list.html:34
+msgid "Name"
+msgstr "Nome"
+
+#: .\templates\contact.html:43 .\templates\registration\register.html:41
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\contact.html:46
+msgid "Message"
+msgstr "Mensagem"
+
+#: .\templates\contact.html:49
+msgid "Send"
+msgstr "Enviar"
+
+#: .\templates\contact.html:56 .\templates\dashboard\base.html:19
+#: .\templates\index.html:40 .\templates\registration\base.html:25
+#: .\templates\terms.html:50 .\templates\user.html:192
+msgid "Home"
+msgstr "Home"
+
+#: .\templates\contact.html:57 .\templates\index.html:41
+#: .\templates\registration\base.html:26 .\templates\terms.html:51
+#: .\templates\user.html:193
+msgid "Panel"
+msgstr "Painel"
+
+#: .\templates\contact.html:58 .\templates\index.html:42
+#: .\templates\registration\base.html:27 .\templates\registration\login.html:25
+#: .\templates\terms.html:52 .\templates\user.html:194
+msgid "Login"
+msgstr "Login"
+
+#: .\templates\contact.html:59 .\templates\index.html:43
+#: .\templates\registration\base.html:28
+#: .\templates\registration\register.html:25
+#: .\templates\registration\register.html:28 .\templates\terms.html:53
+#: .\templates\user.html:195
+#, fuzzy
+#| msgid "Registrar"
+msgid "Register"
+msgstr "Registrar-se"
+
+#: .\templates\contact.html:61 .\templates\index.html:45
+#: .\templates\registration\base.html:30 .\templates\terms.html:32
+#: .\templates\terms.html:55 .\templates\user.html:197
+msgid "Terms"
+msgstr "Termos"
+
+#: .\templates\dashboard\administration.html:8
+#: .\templates\dashboard\administration.html:14
+#, fuzzy
+#| msgid ""
+#| "Painel Administrativo - fmartns.dev | Portal de Tecnologia e Portfólio de "
+#| "Links."
+msgid ""
+"Administrative Panel - fmartns.dev | Technology Portal and Link Portfolio."
+msgstr ""
+"Painel Administrativo - fmartns.dev | Portal de Tecnologia e Portfólio de "
+"Links."
+
+#: .\templates\dashboard\administration.html:9
+#: .\templates\dashboard\change_password.html:9
+#: .\templates\dashboard\index.html:9 .\templates\dashboard\links.html:9
+#: .\templates\dashboard\profile.html:9
+#: .\templates\dashboard\social_media_form.html:9
+#: .\templates\dashboard\social_media_list.html:9
+#, fuzzy
+#| msgid ""
+#| "Filipe Martins, fmartns.dev, Cadastro, Acesso, Segurança, Autenticação, "
+#| "Programação, Desenvolvimento, Python, Tecnologia, Ciência da Computação"
+msgid ""
+"Filipe Martins, fmartns.dev, Dashboard, Access, Security, Authentication, "
+"Programming, Development, Python, Technology, Computer Science"
+msgstr ""
+"Filipe Martins, fmartns.dev, Cadastro, Acesso, Segurança, Autenticação, "
+"Programação, Desenvolvimento, Python, Tecnologia, Ciência da Computação"
+
+#: .\templates\dashboard\administration.html:13
+#: .\templates\dashboard\administration.html:20
+#, fuzzy
+#| msgid "Painel Administrativo - fmartns.dev"
+msgid "Administrative Panel - fmartns.dev"
+msgstr "Painel Administrativo - fmartns.dev"
+
+#: .\templates\dashboard\administration.html:23
+#: .\templates\dashboard\change_password.html:23
+#: .\templates\dashboard\index.html:23 .\templates\dashboard\index.html:27
+#: .\templates\dashboard\social_media_form.html:23
+#: .\templates\dashboard\social_media_list.html:23
+msgid "Dashboard"
+msgstr "Painel"
+
+#: .\templates\dashboard\administration.html:27
+#, fuzzy
+#| msgid "Administração"
+msgid "Administration Panel"
+msgstr "Administração"
+
+#: .\templates\dashboard\administration.html:31
+#: .\templates\dashboard\social_media_list.html:28
+msgid "Social Medias"
+msgstr ""
+
+#: .\templates\dashboard\administration.html:32
+msgid "Check, add and delete social medias."
+msgstr ""
+
+#: .\templates\dashboard\base.html:20
+msgid "Profile"
+msgstr ""
+
+#: .\templates\dashboard\base.html:21 .\templates\user.html:9
+#: .\templates\user.html:163 .\templates\user.html:170
+msgid "Links"
+msgstr "Links"
+
+#: .\templates\dashboard\base.html:22 .\templates\registration\login.html:39
+#: .\templates\registration\register.html:50
+msgid "Password"
+msgstr ""
+
+#: .\templates\dashboard\base.html:24
+#: .\templates\dashboard\social_media_form.html:27
+#: .\templates\dashboard\social_media_list.html:27
+#, fuzzy
+#| msgid "Administração"
+msgid "Administration"
+msgstr "Administração"
+
+#: .\templates\dashboard\base.html:26
+msgid "Logout"
+msgstr ""
+
+#: .\templates\dashboard\change_password.html:8
+#: .\templates\dashboard\change_password.html:14
+#, fuzzy
+#| msgid "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+msgid "Change Password - fmartns.dev | Technology Portal and Link Portfolio."
+msgstr "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+
+#: .\templates\dashboard\change_password.html:13
+#: .\templates\dashboard\change_password.html:20
+#, fuzzy
+#| msgid "Cadastro - fmartns.dev"
+msgid "Change Password - fmartns.dev"
+msgstr "Cadastro - fmartns.dev"
+
+#: .\templates\dashboard\change_password.html:26
+#: .\templates\registration\password_reset_confirm.html:13
+msgid "Change password"
+msgstr ""
+
+#: .\templates\dashboard\change_password.html:56
+#: .\templates\dashboard\profile.html:53
+#: .\templates\dashboard\social_media_form.html:46
+msgid "Save"
+msgstr ""
+
+#: .\templates\dashboard\index.html:8 .\templates\dashboard\index.html:14
+#, fuzzy
+#| msgid "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+msgid "Dashboard - fmartns.dev | Technology Portal and Link Portfolio."
+msgstr "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+
+#: .\templates\dashboard\index.html:13 .\templates\dashboard\index.html:20
+#, fuzzy
+#| msgid "Cadastro - fmartns.dev"
+msgid "Dashboard - fmartns.dev"
+msgstr "Cadastro - fmartns.dev"
+
+#: .\templates\dashboard\index.html:28
+msgid "Hello"
+msgstr "Hey"
+
+#: .\templates\dashboard\index.html:28
+msgid "Welcome again"
+msgstr "Bem-vindo novamente"
+
+#: .\templates\dashboard\index.html:31
+msgid "New!"
+msgstr "Novidade!"
+
+#: .\templates\dashboard\index.html:32
+msgid ""
+"Hey Devs, we are very happy to share the launch of the beta version of "
+"fmartns.dev, now open source, enabling all of you to be part of this dream."
+msgstr ""
+"Hey devs, nos estamos felizes de compartilhar a versão beta do fmartns.dev, "
+"agora em código aberto, possobilitando que todos façam parte desse sonho."
+
+#: .\templates\dashboard\links.html:8 .\templates\dashboard\links.html:14
+#, fuzzy
+#| msgid "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+msgid "Profile Links - fmartns.dev | Technology Portal and Link Portfolio."
+msgstr "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+
+#: .\templates\dashboard\links.html:13 .\templates\dashboard\links.html:20
+#, fuzzy
+#| msgid "Login - fmartns.dev"
+msgid "Profile Links - fmartns.dev"
+msgstr "Login - fmartns.dev"
+
+#: .\templates\dashboard\links.html:23 .\templates\dashboard\profile.html:26
+msgid "Profile Preferences"
+msgstr "Preferências do Perfil"
+
+#: .\templates\dashboard\links.html:42
+#: .\templates\dashboard\social_media_form.html:33
+msgid "Social Media:"
+msgstr "Rede Social:"
+
+#: .\templates\dashboard\links.html:49
+msgid "Username:"
+msgstr "Username:"
+
+#: .\templates\dashboard\links.html:50
+msgid "Your username"
+msgstr "Insira seu usuário"
+
+#: .\templates\dashboard\links.html:52
+#: .\templates\dashboard\social_media_form.html:46
+msgid "Add"
+msgstr "Adicionar"
+
+#: .\templates\dashboard\links.html:54
+msgid "Current links:"
+msgstr "Links atuais:"
+
+#: .\templates\dashboard\links.html:64
+#, fuzzy
+#| msgid "Remover"
+msgid "Remove"
+msgstr "Remover"
+
+#: .\templates\dashboard\profile.html:8 .\templates\dashboard\profile.html:14
+#, fuzzy
+#| msgid "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+msgid ""
+"Profile Preferences - fmartns.dev | Technology Portal and Link Portfolio."
+msgstr "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+
+#: .\templates\dashboard\profile.html:13 .\templates\dashboard\profile.html:20
+#, fuzzy
+#| msgid "Painel - fmartns.dev"
+msgid "Profile Preferences - fmartns.dev"
+msgstr "Painel - fmartns.dev"
+
+#: .\templates\dashboard\profile.html:23
+#, fuzzy
+#| msgid "Preferências"
+msgid "Preferences"
+msgstr "Preferências"
+
+#: .\templates\dashboard\profile.html:29
+msgid "First name:"
+msgstr "Nome:"
+
+#: .\templates\dashboard\profile.html:32
+msgid "Last name:"
+msgstr "Sobrenome:"
+
+#: .\templates\dashboard\profile.html:35
+msgid "Job:"
+msgstr "Cargo:"
+
+#: .\templates\dashboard\profile.html:38
+msgid "Is student:"
+msgstr "É Estudante:"
+
+#: .\templates\dashboard\profile.html:40
+msgid "Yes"
+msgstr "Sim"
+
+#: .\templates\dashboard\profile.html:41
+msgid "No"
+msgstr "Não"
+
+#: .\templates\dashboard\profile.html:44
+msgid "Primary color:"
+msgstr "Cor principal:"
+
+#: .\templates\dashboard\profile.html:47
+msgid "Secondary color:"
+msgstr "Cor secundária:"
+
+#: .\templates\dashboard\profile.html:50
+msgid "Font color:"
+msgstr "Cor das fontes e icones:"
+
+#: .\templates\dashboard\social_media_form.html:8
+#: .\templates\dashboard\social_media_form.html:14
+#: .\templates\dashboard\social_media_list.html:8
+#: .\templates\dashboard\social_media_list.html:14
+#, fuzzy
+#| msgid ""
+#| "Administração | Redes Sociais - fmartns.dev | Portal de Tecnologia e "
+#| "Portfólio de Links."
+msgid ""
+"Administration | Social Media - fmartns.dev | Technology Portal and Link "
+"Portfolio."
+msgstr ""
+"Administração | Redes Sociais - fmartns.dev | Portal de Tecnologia e "
+"Portfólio de Links."
+
+#: .\templates\dashboard\social_media_form.html:13
+#: .\templates\dashboard\social_media_form.html:20
+#: .\templates\dashboard\social_media_list.html:13
+#: .\templates\dashboard\social_media_list.html:20
+#, fuzzy
+#| msgid "Administração | Redes Sociais - fmartns.dev"
+msgid "Administration | Social Media - fmartns.dev"
+msgstr "Administração | Redes Sociais - fmartns.dev"
+
+#: .\templates\dashboard\social_media_form.html:37
+#, fuzzy
+#| msgid "Prefixo: "
+msgid "Prefix: "
+msgstr "Prefixo: "
+
+#: .\templates\dashboard\social_media_form.html:43
+msgid "Icon: "
+msgstr ""
+
+#: .\templates\dashboard\social_media_list.html:30
+msgid "Add new"
+msgstr ""
+
+#: .\templates\dashboard\social_media_list.html:35
+#, fuzzy
+#| msgid "Prefixo"
+msgid "Prefix"
+msgstr "Prefixo"
+
+#: .\templates\dashboard\social_media_list.html:36
+msgid "Icon"
+msgstr ""
+
+#: .\templates\dashboard\social_media_list.html:37
+#: .\templates\dashboard\social_media_list.html:49
+msgid "Delete"
+msgstr ""
+
+#: .\templates\index.html:8
+msgid "Technology portal"
+msgstr ""
+
+#: .\templates\index.html:33
+msgid "Share your links in a simple, fast, and useful way."
+msgstr "Compartilhe seus links de forma simples, rápida e útil."
+
+#: .\templates\index.html:34
+msgid "Start now"
+msgstr "Começar agora!"
+
+#: .\templates\registration\login.html:7 .\templates\registration\login.html:13
+#: .\templates\registration\login.html:20
+#, fuzzy
+#| msgid ""
+#| "Login - fmartns.dev | Portal de Tecnologia e Portfólio de Links. Faça "
+#| "login para acessar seu perfil."
+msgid ""
+"Login - fmartns.dev | Technology Portal and Link Portfolio. Log in to access "
+"your profile."
+msgstr ""
+"Login - fmartns.dev | Portal de Tecnologia e Portfólio de Links. Faça login "
+"para acessar seu perfil."
+
+#: .\templates\registration\login.html:8
+#, fuzzy
+#| msgid ""
+#| "Filipe Martins, fmartns.dev, Login, Acesso, Segurança, Autenticação, "
+#| "Programação, Desenvolvimento, Python, Tecnologia, Ciência da Computação"
+msgid ""
+"Filipe Martins, fmartns.dev, Login, Access, Security, Authentication, "
+"Programming, Development, Python, Technology, Computer Science"
+msgstr ""
+"Filipe Martins, fmartns.dev, Login, Acesso, Segurança, Autenticação, "
+"Programação, Desenvolvimento, Python, Tecnologia, Ciência da Computação"
+
+#: .\templates\registration\login.html:12
+#: .\templates\registration\login.html:19
+msgid "Login - fmartns.dev"
+msgstr "Login - fmartns.dev"
+
+#: .\templates\registration\login.html:28
+msgid "Log in"
+msgstr "Login"
+
+#: .\templates\registration\login.html:35
+#: .\templates\registration\register.html:32
+msgid "Username"
+msgstr ""
+
+#: .\templates\registration\login.html:36
+#: .\templates\registration\register.html:33
+msgid "Enter your username"
+msgstr "Insira seu usuário"
+
+#: .\templates\registration\login.html:40
+#: .\templates\registration\register.html:51
+msgid "Enter your password"
+msgstr "Insira sua senha"
+
+#: .\templates\registration\login.html:41
+msgid "Forgot password?"
+msgstr "Esqueceu sua senha?"
+
+#: .\templates\registration\login.html:44
+msgid "Don't have account?"
+msgstr "Não tem conta?"
+
+#: .\templates\registration\login.html:44
+msgid "Sign up"
+msgstr "Registrar-se"
+
+#: .\templates\registration\password_reset_complete.html:6
+#: .\templates\registration\password_reset_confirm.html:6
+#: .\templates\registration\password_reset_done.html:6
+#: .\templates\registration\password_reset_form.html:6
+msgid "Password reset"
+msgstr "Resetar senha"
+
+#: .\templates\registration\password_reset_complete.html:9
+msgid "Password reset complete"
+msgstr "Senha resetada com sucesso"
+
+#: .\templates\registration\password_reset_complete.html:10
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr ""
+
+#: .\templates\registration\password_reset_confirm.html:9
+msgid "Enter new password"
+msgstr ""
+
+#: .\templates\registration\password_reset_done.html:9
+msgid ""
+"We have emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+
+#: .\templates\registration\password_reset_done.html:10
+msgid ""
+"If you do not receive an email, please make sure you have entered the "
+"address you registered with, and check your spam folder."
+msgstr ""
+
+#: .\templates\registration\password_reset_form.html:9
+#: .\templates\registration\password_reset_form.html:14
+msgid "Reset password"
+msgstr ""
+
+#: .\templates\registration\password_reset_form.html:13
+#: .\templates\registration\register.html:42
+msgid "Enter your email"
+msgstr "Digite seu e-mail"
+
+#: .\templates\registration\register.html:7
+#: .\templates\registration\register.html:13
+#: .\templates\registration\register.html:20
+#, fuzzy
+#| msgid ""
+#| "Cadastro - fmartns.dev | Portal de Tecnologia e Portfólio de Links. Crie "
+#| "uma conta para acessar seu perfil."
+msgid ""
+"Register - fmartns.dev | Technology Portal and Link Portfolio. Create an "
+"account to access your profile."
+msgstr ""
+"Cadastro - fmartns.dev | Portal de Tecnologia e Portfólio de Links. Crie uma "
+"conta para acessar seu perfil."
+
+#: .\templates\registration\register.html:8
+#, fuzzy
+#| msgid ""
+#| "Filipe Martins, fmartns.dev, Login, Acesso, Segurança, Autenticação, "
+#| "Programação, Desenvolvimento, Python, Tecnologia, Ciência da Computação"
+msgid ""
+"Filipe Martins, fmartns.dev, Register, Access, Security, Authentication, "
+"Programming, Development, Python, Technology, Computer Science"
+msgstr ""
+"Filipe Martins, fmartns.dev, Login, Acesso, Segurança, Autenticação, "
+"Programação, Desenvolvimento, Python, Tecnologia, Ciência da Computação"
+
+#: .\templates\registration\register.html:12
+#: .\templates\registration\register.html:19
+#, fuzzy
+#| msgid "Login - fmartns.dev"
+msgid "Register - fmartns.dev"
+msgstr "Login - fmartns.dev"
+
+#: .\templates\registration\register.html:59
+msgid "Confirm Password"
+msgstr "Confirmação de senha"
+
+#: .\templates\registration\register.html:60
+msgid "Confirm your password"
+msgstr "Confirme sua senha"
+
+#: .\templates\registration\register.html:67
+msgid "When registering, you agree to the "
+msgstr "Quando se registra, automaticamente aceita os "
+
+#: .\templates\registration\register.html:67
+msgid "terms of use"
+msgstr "termos de uso"
+
+#: .\templates\registration\register.html:69
+msgid "Already have an account?"
+msgstr "Já tem uma conta?"
+
+#: .\templates\registration\register.html:69
+msgid "Sign in"
+msgstr "Login"
+
+#: .\templates\terms.html:33
+msgid ""
+"Welcome to fmartns.dev! By signing up, you agree to provide your name, "
+"email, and a secure password. You are responsible for your accounts security."
+msgstr ""
+"Bem-vindo ao fmartns.dev! Ao se inscrever, você concorda em fornecer seu "
+"nome, email e uma senha segura. Você é responsável pela segurança da sua "
+"conta."
+
+#: .\templates\terms.html:35
+msgid ""
+"Use our site lawfully and responsibly. You are accountable for any content "
+"you share."
+msgstr ""
+"Use nosso site de maneira legal e responsável. Você é responsável por "
+"qualquer conteúdo que compartilhar."
+
+#: .\templates\terms.html:37
+msgid ""
+"Content you share remains yours, but we may use it to operate and improve "
+"our site."
+msgstr ""
+"O conteúdo que você compartilha continua sendo seu, mas podemos usá-lo para "
+"operar e melhorar nosso site."
+
+#: .\templates\terms.html:39
+msgid "We may update these terms; it is your responsibility to stay informed."
+msgstr ""
+"Podemos atualizar estes termos; é sua responsabilidade se manter informado."
+
+#: .\templates\terms.html:41
+msgid "We reserve the right to terminate your account for violations."
+msgstr "Reservamos o direito de encerrar sua conta por violações."
+
+#: .\templates\terms.html:43
+msgid "Thanks for choosing our site!"
+msgstr "Obrigado por escolher nosso site!"
+
+#: .\templates\user.html:159 .\templates\user.html:164
+#: .\templates\user.html:171
+msgid "User links page for"
+msgstr ""
+
+#: .\templates\user.html:180
+msgid "Explore the links below:"
+msgstr "Explore os links abaixo:"
+
+#: .\templates\user.html:207
+msgid "Student"
+msgstr "Estudante"
+
+#~ msgid "Enviar"
+#~ msgstr "Enviar"
+
+#~ msgid "Início"
+#~ msgstr "Início"
+
+#~ msgid "Painel"
+#~ msgstr "Painel"
+
+#~ msgid ""
+#~ "Filipe Martins, fmartns.dev, Painel, Acesso, Segurança, Autenticação, "
+#~ "Programação, Desenvolvimento, Python, Tecnologia, Ciência da Computação"
+#~ msgstr ""
+#~ "Filipe Martins, fmartns.dev, Painel, Acesso, Segurança, Autenticação, "
+#~ "Programação, Desenvolvimento, Python, Tecnologia, Ciência da Computação"
+
+#~ msgid "Painel de Administração"
+#~ msgstr "Painel de Administração"
+
+#~ msgid "Redes Sociais"
+#~ msgstr "Redes Sociais"
+
+#~ msgid "Verificar, adicionar e excluir redes sociais."
+#~ msgstr "Verificar, adicionar e excluir redes sociais."
+
+#~ msgid "Perfil"
+#~ msgstr "Perfil"
+
+#~ msgid "Senha"
+#~ msgstr "Senha"
+
+#~ msgid "Sair"
+#~ msgstr "Sair"
+
+#~ msgid ""
+#~ "Alterar Senha - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+#~ msgstr ""
+#~ "Alterar Senha - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+
+#~ msgid "Alterar Senha - fmartns.dev"
+#~ msgstr "Alterar Senha - fmartns.dev"
+
+#~ msgid "Alterar senha"
+#~ msgstr "Alterar senha"
+
+#~ msgid "Salvar"
+#~ msgstr "Salvar"
+
+#~ msgid "Olá"
+#~ msgstr "Olá"
+
+#~ msgid "Bem-vindo novamente"
+#~ msgstr "Bem-vindo novamente"
+
+#~ msgid "Novo!"
+#~ msgstr "Novo!"
+
+#~ msgid ""
+#~ "Olá, Desenvolvedores! Estamos muito felizes em compartilhar o lançamento "
+#~ "da versão beta do fmartns.dev, agora de código aberto, permitindo que "
+#~ "todos vocês façam parte desse sonho."
+#~ msgstr ""
+#~ "Olá, Desenvolvedores! Estamos muito felizes em compartilhar o lançamento "
+#~ "da versão beta do fmartns.dev, agora de código aberto, permitindo que "
+#~ "todos vocês façam parte desse sonho."
+
+#~ msgid ""
+#~ "Links do Perfil - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+#~ msgstr ""
+#~ "Links do Perfil - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
+
+#~ msgid "Links do Perfil - fmartns.dev"
+#~ msgstr "Links do Perfil - fmartns.dev"
+
+#~ msgid "Preferências do Perfil"
+#~ msgstr "Preferências do Perfil"
+
+#~ msgid "Rede Social:"
+#~ msgstr "Rede Social:"
+
+#~ msgid "Nome de Usuário:"
+#~ msgstr "Nome de Usuário:"
+
+#~ msgid "Seu nome de usuário"
+#~ msgstr "Seu nome de usuário"
+
+#~ msgid "Adicionar"
+#~ msgstr "Adicionar"
+
+#~ msgid "Links atuais:"
+#~ msgstr "Links atuais:"
+
+#~ msgid ""
+#~ "Preferências do Perfil - fmartns.dev | Portal de Tecnologia e Portfólio "
+#~ "de Links."
+#~ msgstr ""
+#~ "Preferências do Perfil - fmartns.dev | Portal de Tecnologia e Portfólio "
+#~ "de Links."
+
+#~ msgid "Preferências do Perfil - fmartns.dev"
+#~ msgstr "Preferências do Perfil - fmartns.dev"
+
+#~ msgid "Nome:"
+#~ msgstr "Nome:"
+
+#~ msgid "Sobrenome:"
+#~ msgstr "Sobrenome:"
+
+#~ msgid "Trabalho:"
+#~ msgstr "Trabalho:"
+
+#~ msgid "É estudante:"
+#~ msgstr "É estudante:"
+
+#~ msgid "Sim"
+#~ msgstr "Sim"
+
+#~ msgid "Não"
+#~ msgstr "Não"
+
+#~ msgid "Cor primária:"
+#~ msgstr "Cor primária:"
+
+#~ msgid "Cor secundária:"
+#~ msgstr "Cor secundária:"
+
+#~ msgid "Cor da fonte:"
+#~ msgstr "Cor da fonte:"
+
+#~ msgid "Ícone: "
+#~ msgstr "Ícone: "
+
+#~ msgid "Adicionar novo"
+#~ msgstr "Adicionar novo"
+
+#~ msgid "Ícone"
+#~ msgstr "Ícone"
+
+#~ msgid "Excluir"
+#~ msgstr "Excluir"
+
+#~ msgid "Portal de tecnologia"
+#~ msgstr "Portal de tecnologia"
+
+#~ msgid "Compartilhe seus links de maneira simples, rápida e útil."
+#~ msgstr "Compartilhe seus links de maneira simples, rápida e útil."
+
+#~ msgid "Entrar"
+#~ msgstr "Entrar"
+
+#~ msgid "Nome de usuário"
+#~ msgstr "Nome de usuário"
+
+#~ msgid "Digite seu nome de usuário"
+#~ msgstr "Digite seu nome de usuário"
+
+#~ msgid "Digite sua senha"
+#~ msgstr "Digite sua senha"
+
+#~ msgid "Esqueceu a senha?"
+#~ msgstr "Esqueceu a senha?"
+
+#~ msgid "Não tem uma conta?"
+#~ msgstr "Não tem uma conta?"
+
+#~ msgid "Inscreva-se"
+#~ msgstr "Inscreva-se"
+
+#~ msgid "Redefinição de senha"
+#~ msgstr "Redefinição de senha"
+
+#~ msgid "Redefinição de senha concluída"
+#~ msgstr "Redefinição de senha concluída"
+
+#~ msgid "Sua senha foi definida. Você pode prosseguir e fazer login agora."
+#~ msgstr "Sua senha foi definida. Você pode prosseguir e fazer login agora."
+
+#~ msgid "Digite uma nova senha"
+#~ msgstr "Digite uma nova senha"
+
+#~ msgid ""
+#~ "Enviamos instruções por e-mail para definir sua senha, se uma conta "
+#~ "existir com o e-mail que você digitou. Você deve recebê-las em breve."
+#~ msgstr ""
+#~ "Enviamos instruções por e-mail para definir sua senha, se uma conta "
+#~ "existir com o e-mail que você digitou. Você deve recebê-las em breve."
+
+#~ msgid "Redefinir senha"
+#~ msgstr "Redefinir senha"
+
+#~ msgid "Confirmar senha"
+#~ msgstr "Confirmar senha"
+
+#~ msgid "Confirme sua senha"
+#~ msgstr "Confirme sua senha"
+
+#~ msgid "Ao se registrar, você concorda com os "
+#~ msgstr "Ao se registrar, você concorda com os "
+
+#~ msgid "Já tem uma conta?"
+#~ msgstr "Já tem uma conta?"
+
+#~ msgid "Faça login"
+#~ msgstr "Faça login"
+
+#~ msgid ""
+#~ "Bem-vindo ao fmartns.dev! Ao se inscrever, você concorda em fornecer seu "
+#~ "nome, e-mail e uma senha segura. Você é responsável pela segurança de sua "
+#~ "conta."
+#~ msgstr ""
+#~ "Bem-vindo ao fmartns.dev! Ao se inscrever, você concorda em fornecer seu "
+#~ "nome, e-mail e uma senha segura. Você é responsável pela segurança de sua "
+#~ "conta."
+
+#~ msgid ""
+#~ "Use nosso site de maneira legal e responsável. Você é responsável por "
+#~ "qualquer conteúdo que compartilhar."
+#~ msgstr ""
+#~ "Use nosso site de maneira legal e responsável. Você é responsável por "
+#~ "qualquer conteúdo que compartilhar."
+
+#~ msgid ""
+#~ "O conteúdo que você compartilha continua sendo seu, mas podemos usá-lo "
+#~ "para operar e melhorar nosso site."
+#~ msgstr ""
+#~ "O conteúdo que você compartilha continua sendo seu, mas podemos usá-lo "
+#~ "para operar e melhorar nosso site."
+
+#~ msgid "Reservamos o direito de encerrar sua conta por violações."
+#~ msgstr "Reservamos o direito de encerrar sua conta por violações."
+
+#~ msgid "Obrigado por escolher nosso site!"
+#~ msgstr "Obrigado por escolher nosso site!"
+
+#~ msgid "Página de links do usuário para"
+#~ msgstr "Página de links do usuário para"

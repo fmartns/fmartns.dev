@@ -1,0 +1,55 @@
+{% extends "dashboard/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block meta_tags %}
+    <meta name="robots" content="noindex">
+    <meta name="description" content="{% trans 'Profile Preferences - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta name="keywords" content="{% trans 'Filipe Martins, fmartns.dev, Dashboard, Access, Security, Authentication, Programming, Development, Python, Technology, Computer Science' %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% trans 'Profile Preferences - fmartns.dev' %}">
+    <meta property="og:description" content="{% trans 'Profile Preferences - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta property="og:url" content="https://www.fmartns.dev/accounts/login/">
+    <meta property="og:image" content="https://i.imgur.com/VGp4sE3.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% trans 'Profile Preferences - fmartns.dev' %}">
+{% endblock %}
+
+{% block title %} {% trans 'Preferences' %} {% endblock %}
+
+{% block content %}
+  <h1>{% trans 'Profile Preferences' %}</h1>
+  <form method="post">
+    {% csrf_token %}
+    <label for="id_first_name">{% trans 'First name:' %}</label> 
+    <input type="text" id="id_first_name" name="{{ form.first_name.name }}" value="{{ form.first_name.value }}" placeholder="Filipe">
+
+    <label for="id_last_name">{% trans 'Last name:' %}</label>
+    <input type="text" id="id_last_name" name="{{ form.last_name.name }}" value="{{ form.last_name.value }}" placeholder="Martins">
+
+    <label for="id_job">{% trans 'Job:' %}</label>
+    <input type="text" id="id_job" name="{{ form.job.name }}" value="{{ form.job.value }}" placeholder="Developer">
+
+    <label for="id_is_student">{% trans 'Is student:' %}</label>
+    <select id="id_is_student" name="{{ form.is_student.name }}">
+      <option value=True {% if form.is_student.value == True %}selected{% endif %}>{% trans 'Yes' %}</option>
+      <option value=False {% if form.is_student.value == False %}selected{% endif %}>{% trans 'No' %}</option>
+    </select>
+
+    <label for="id_primary_color">{% trans 'Primary color:' %}</label>
+    <input type="color" id="id_primary_color" name="{{ form.primary_color.name }}" value="{{ form.primary_color.value }}">
+
+    <label for="id_secondary_color">{% trans 'Secondary color:' %}</label>
+    <input type="color" id="id_secondary_color" name="{{ form.secondary_color.name }}" value="{{ form.secondary_color.value }}">
+
+    <label for="id_font_color">{% trans 'Font color:' %}</label>
+    <input type="color" id="id_font_color" name="{{ form.font_color.name }}" value="{{ form.font_color.value }}">
+
+<input class="save-button" type="submit" value="{% trans 'Save' %}">
+</form>
+{% endblock %}

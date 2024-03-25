@@ -1,0 +1,37 @@
+{% extends "dashboard/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block meta_tags %}
+    <meta name="robots" content="noindex">
+    <meta name="description" content="{% trans 'Dashboard - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta name="keywords" content="{% trans 'Filipe Martins, fmartns.dev, Dashboard, Access, Security, Authentication, Programming, Development, Python, Technology, Computer Science' %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% trans 'Dashboard - fmartns.dev' %}">
+    <meta property="og:description" content="{% trans 'Dashboard - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta property="og:url" content="https://www.fmartns.dev/accounts/login/">
+    <meta property="og:image" content="https://i.imgur.com/VGp4sE3.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% trans 'Dashboard - fmartns.dev' %}">
+{% endblock %}
+
+{% block title %} {% trans 'Dashboard' %} {% endblock %}
+
+{% block content %}
+
+<h1>{% trans 'Dashboard' %}</h1>
+<p>{% trans 'Hello' %} {{ user.username }}! {% trans 'Welcome again' %}.</p>
+<a class="profile-link" href="{% url 'user_links_page' user.username %}" class="btn">{% trans '<span>Click here</span> to acess your profile.' %}</a>
+
+<div class="dash-news">
+    <h4 class="dash-news-title">{% trans 'New!' %}</h4>
+    <p>{% trans 'Hey Devs, we are very happy to share the launch of the beta version of fmartns.dev, now open source, enabling all of you to be part of this dream.' %}</p>
+    <p class="dash-news-author">- Filipe Martins</p>
+</div>
+
+{% endblock %}

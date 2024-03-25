@@ -1,0 +1,46 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta_tags %}{% endblock %}
+    <title>{% block title %}{% endblock %} | fmartns.dev</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'index' %}" class="fm"><h1>f<span>m</span></h1></a>
+        <a href="{% url 'index' %}" class="fmartnsdev"><h1>fmartns<span>.dev</span></h1></a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'dashboard' %}"><img src="{% static 'icons/home.svg' %}" alt="{% trans 'Home' %}"><p>{% trans 'Home' %}</p></a></li>
+                <li><a href="{% url 'manage_preferences' %}"><img src="{% static 'icons/profile.svg' %}" alt="{% trans 'Profile' %}"><p>{{ user.username }}</p></a></li>
+                <li><a href="{% url 'manage_social_media' %}"><img src="{% static 'icons/link.svg' %}" alt="{% trans 'Links' %}"><p>{% trans 'Links' %}</p></a></li>
+                <li><a href="{% url 'change_password' %}"><img src="{% static 'icons/lock.svg' %}" alt="{% trans 'Password' %}"><p>{% trans 'Password' %}</p></a></li>
+                {% if user.is_superuser %}
+                    <li><a href="{% url 'administration' %}"><img src="{% static 'icons/gear.svg' %}" alt="{% trans 'Administration' %}"><p>{% trans 'Administration' %}</p></a></li>
+                {% endif %}
+                <li>
+                    <form method="post" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit">
+                            <img src="{% static 'icons/logout.svg' %}" alt="{% trans 'Logout' %}">
+                            <p>{% trans 'Logout' %}</p>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="accounts-container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+    <footer>
+	</footer>
+</body>
+</html>

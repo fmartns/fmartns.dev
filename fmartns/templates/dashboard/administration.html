@@ -1,0 +1,36 @@
+{% extends "dashboard/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block meta_tags %}
+    <meta name="robots" content="noindex">
+    <meta name="description" content="{% trans 'Administrative Panel - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta name="keywords" content="{% trans 'Filipe Martins, fmartns.dev, Dashboard, Access, Security, Authentication, Programming, Development, Python, Technology, Computer Science' %}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% trans 'Administrative Panel - fmartns.dev' %}">
+    <meta property="og:description" content="{% trans 'Administrative Panel - fmartns.dev | Technology Portal and Link Portfolio.' %}">
+    <meta property="og:url" content="https://www.fmartns.dev/accounts/login/">
+    <meta property="og:image" content="https://i.imgur.com/VGp4sE3.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% trans 'Administrative Panel - fmartns.dev' %}">
+{% endblock %}
+
+{% block title %} {% trans 'Dashboard' %} {% endblock %}
+
+{% block content %}
+
+<h1>{% trans 'Administration Panel' %}</h1>
+
+<a class="admin-panel-link" href="{% url 'social_media_list' %}">
+<div class="admin-panel-option">
+    <h3><img src="{% static 'icons/person-bounding-box.svg' %}" alt="Social Medias">{% trans 'Social Medias' %}</h3>
+    <p>{% trans 'Check, add and delete social medias.' %}</p>
+</div>
+</a>
+
+{% endblock %}
