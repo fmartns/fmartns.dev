@@ -220,7 +220,7 @@ input[type="color"] {
 .profile-link {
     display: block;
     text-decoration: none;
-    color: #2b323c;
+    color: #000;
 }
 
 .profile-link span {
