@@ -46,7 +46,8 @@ $ python3 manage.py runserver
 ## Screenshots
 
 ![App Screenshot](https://i.imgur.com/eAW1jh8.png)
-
+![App Screenshot](https://i.imgur.com/VY3yAoe.png)
+![App Screenshot](https://i.imgur.com/eBph38x.png)
 
 ## Autor
 
