@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
+ALLOWED_HOSTS = "fmartns.dev"
+
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 SESSION_COOKIE_SECURE = True
@@ -32,8 +34,6 @@ SECRET_KEY = "django-insecure-#vocdi*6mc!%(6itr(v#=!h44*rt6ll(zv0efph8*^gb&eqe$&
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = os.environ.get("ALLOWRD_HOSTS").split(" ")
 
 # Application definition
 
