@@ -13,13 +13,14 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
-ALLOWED_HOSTS = "fmartns.dev"
+ALLOWED_HOSTS = ['fmartns.dev', '*']
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_TRUSTED_ORIGINS = ['http://fmartns.dev']
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
