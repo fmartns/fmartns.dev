@@ -23,17 +23,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-#vocdi*6mc!%(6itr(v#=!h44*rt6ll(zv0efph8*^gb&eqe$&"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = ['fmartns.dev', '*']
+DEBUG = False
+
+ALLOWED_HOSTS = ['*']
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-CSRF_TRUSTED_ORIGINS = ['http://fmartns.dev']
+SECURE_SSL_REDIRECT = False
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_XFORWARDED_PROTO', 'https')
+CSRF_TRUSTED_ORIGINS = ['http://fmartns.dev', 'https://fmartns.dev', 'http://3.82.145.23', 'https://3.82.145.23']
 
 # Application definition
 
