@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="{% url 'dashboard' %}"><img src="{% static 'icons/home.svg' %}" alt="{% trans 'Home' %}"><p>{% trans 'Home' %}</p></a></li>
-                <li><a href="{% url 'user_links_page' user.username %}"><img src="{% static 'icons/page.svg' %}" alt="{% trans 'Your page' %}"><p>{% trans 'Your page' %}</p></a></li>
+                <li><a href="{% url 'user_links_page' user.username %}" target="_blank"><img src="{% static 'icons/page.svg' %}" alt="{% trans 'Your page' %}"><p>{% trans 'Your page' %}</p></a></li>
                 <li><a href="{% url 'manage_preferences' %}"><img src="{% static 'icons/profile.svg' %}" alt="{% trans 'Profile' %}"><p>{{ user.username }}</p></a></li>
                 <li><a href="{% url 'manage_social_media' %}"><img src="{% static 'icons/link.svg' %}" alt="{% trans 'Links' %}"><p>{% trans 'Links' %}</p></a></li>
                 <li><a href="{% url 'change_password' %}"><img src="{% static 'icons/lock.svg' %}" alt="{% trans 'Password' %}"><p>{% trans 'Password' %}</p></a></li>
