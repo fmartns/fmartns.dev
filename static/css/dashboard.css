@@ -215,6 +215,32 @@ input[type="color"] {
     font-size: 12px;
 }
 
+/* Notifications */
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.9;
+    transition: opacity 0.6s;
+}
+
+.notification .progress-bar {
+    height: 3px;
+    background-color: #006400; /* verde mais escuro */
+    width: 100%;
+    animation: progress 4s linear;
+}
+
+@keyframes progress {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
 /* Index */
 
 .profile-link {
