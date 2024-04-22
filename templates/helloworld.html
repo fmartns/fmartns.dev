@@ -5,8 +5,7 @@
     {% load static %}
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<title>{% trans "404" %} | fmartns.dev</title>
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<title>fmartns.dev | {% trans "Technology portal" %}</title>
 	<meta name="description" content='{% trans "fmartns.dev | Your platform for storing links and your daily technology news portal." %}'>
 	<meta name="author" content="Filipe Martins">
 	<link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
@@ -24,26 +23,13 @@
 	<meta name="twitter:image" content="{% static 'img/banner.png' %}">
 </head>
 <body>
-    <header>
-        <a href="{% url 'index' %}"><h1>fmartns<span>.dev</span></h1></a>
-    </header>
-    <main>
-        <div class="error-container">
-            <h2>404</h2>
-            <p>{% trans 'Page not found' %}</p>
-        </div>
+	<header>
+
+	</header>
+	<main>
+        <h1>Hello World!</h1>
     </main>
-    <footer>
-		<nav>
-			<ul>
-				<li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
-				<li><a href="{% url 'dashboard' %}">{% trans 'Panel' %}</a></li>
-				<li><a href="{% url 'login' %}">{% trans 'Login' %}</a></li>
-				<li><a href="{% url 'register' %}">{% trans 'Register' %}</a></li>
-				<li><a href="{% url 'contact' %}">{% trans 'Contact' %}</a></li>
-				<li><a href="{% url 'terms' %}">{% trans 'Terms' %}</a></li>
-			</ul>
-		</nav>
+	<footer>
 	</footer>
 </body>
 </html>

@@ -7,6 +7,7 @@ from django.http import HttpResponseForbidden
 from django.contrib.auth.views import PasswordChangeView
 from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 
 @login_required
 def dashboard (request):
@@ -82,6 +83,7 @@ def manage_preferences(request):
         form = UserProfileForm(request.POST, instance=user_profile)
         if form.is_valid():
             form.save()
+            messages.success(request, _('Settings saved successfully!'))
             return redirect('manage_preferences')
     else:
         form = UserProfileForm(instance=user_profile)

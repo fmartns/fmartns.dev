@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-24 17:38-0300\n"
+"POT-Creation-Date: 2024-04-22 09:36-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: .\accounts\views.py:29
+msgid "The username can only contain letters and numbers."
+msgstr "O nome de usuário só pode conter letras e números."
+
+#: .\accounts\views.py:31
+msgid "The username cannot have more than 30 characters."
+msgstr "O nome de usuário não pode ter mais de 30 caracteres."
+
 #: .\dashboard\forms.py:23
 msgid "You can only select up to 5 social media accounts."
 msgstr "Você só pode selecionar até 5 contas de redes sociais."
 
-#: .\dashboard\views.py:94
+#: .\dashboard\views.py:86
+msgid "Settings saved successfully!"
+msgstr "Definições salvas com sucesso!"
+
+#: .\dashboard\views.py:96
 msgid "Your password has been changed successfully!"
 msgstr "Sua senha foi alterada com sucesso!"
 
@@ -30,15 +42,17 @@ msgstr "Sua senha foi alterada com sucesso!"
 msgid "Your message has been sent successfully!"
 msgstr "Sua mensagem foi enviada com sucesso!"
 
-#: .\templates\contact.html:8 .\templates\terms.html:8
-msgid "Contato"
-msgstr "Contato"
+#: .\templates\404.html:8
+msgid "404"
+msgstr ""
 
+#: .\templates\404.html:10 .\templates\404.html:15 .\templates\404.html:23
 #: .\templates\contact.html:10 .\templates\contact.html:15
-#: .\templates\contact.html:23 .\templates\index.html:10
-#: .\templates\index.html:15 .\templates\index.html:23
-#: .\templates\terms.html:10 .\templates\terms.html:15
-#: .\templates\terms.html:23
+#: .\templates\contact.html:23 .\templates\helloworld.html:9
+#: .\templates\helloworld.html:14 .\templates\helloworld.html:22
+#: .\templates\index.html:10 .\templates\index.html:15
+#: .\templates\index.html:23 .\templates\terms.html:10
+#: .\templates\terms.html:15 .\templates\terms.html:23
 #, fuzzy
 #| msgid ""
 #| "fmartns.dev | Sua plataforma para armazenar links e seu portal de "
@@ -50,18 +64,66 @@ msgstr ""
 "fmartns.dev | Sua plataforma para armazenar links e seu portal de notícias "
 "tecnológicas diárias."
 
-#: .\templates\contact.html:14 .\templates\contact.html:22
-#: .\templates\index.html:14 .\templates\index.html:22
-#: .\templates\terms.html:14 .\templates\terms.html:22
+#: .\templates\404.html:14 .\templates\404.html:22 .\templates\contact.html:14
+#: .\templates\contact.html:22 .\templates\helloworld.html:13
+#: .\templates\helloworld.html:21 .\templates\index.html:14
+#: .\templates\index.html:22 .\templates\terms.html:14
+#: .\templates\terms.html:22
 #, fuzzy
 #| msgid "fmartns.dev | Portal de tecnologia"
 msgid "fmartns.dev | Technology portal"
 msgstr "fmartns.dev | Portal de tecnologia"
 
-#: .\templates\contact.html:32 .\templates\contact.html:60
-#: .\templates\index.html:44 .\templates\registration\base.html:29
-#: .\templates\terms.html:54 .\templates\user.html:196
+#: .\templates\404.html:33
+msgid "Page not found"
+msgstr ""
+
+#: .\templates\404.html:39 .\templates\contact.html:56
+#: .\templates\dashboard\base.html:19 .\templates\index.html:40
+#: .\templates\registration\base.html:25 .\templates\terms.html:50
+#: .\templates\user.html:200
+msgid "Home"
+msgstr "Home"
+
+#: .\templates\404.html:40 .\templates\contact.html:57
+#: .\templates\index.html:41 .\templates\registration\base.html:26
+#: .\templates\terms.html:51 .\templates\user.html:201
+msgid "Panel"
+msgstr "Painel"
+
+#: .\templates\404.html:41 .\templates\contact.html:58
+#: .\templates\index.html:42 .\templates\registration\base.html:27
+#: .\templates\registration\login.html:25 .\templates\terms.html:52
+#: .\templates\user.html:202
+msgid "Login"
+msgstr "Login"
+
+#: .\templates\404.html:42 .\templates\contact.html:59
+#: .\templates\index.html:43 .\templates\registration\base.html:28
+#: .\templates\registration\register.html:25
+#: .\templates\registration\register.html:28 .\templates\terms.html:53
+#: .\templates\user.html:203
+#, fuzzy
+#| msgid "Registrar"
+msgid "Register"
+msgstr "Registrar-se"
+
+#: .\templates\404.html:43 .\templates\contact.html:32
+#: .\templates\contact.html:60 .\templates\index.html:44
+#: .\templates\registration\base.html:29 .\templates\terms.html:54
+#: .\templates\user.html:204
 msgid "Contact"
+msgstr "Contato"
+
+#: .\templates\404.html:44 .\templates\contact.html:61
+#: .\templates\index.html:45 .\templates\registration\base.html:30
+#: .\templates\terms.html:32 .\templates\terms.html:55
+#: .\templates\user.html:205
+msgid "Terms"
+msgstr "Termos"
+
+#: .\templates\contact.html:8 .\templates\terms.html:8
+msgid "Contato"
 msgstr "Contato"
 
 #: .\templates\contact.html:40 .\templates\dashboard\social_media_list.html:34
@@ -79,40 +141,6 @@ msgstr "Mensagem"
 #: .\templates\contact.html:49
 msgid "Send"
 msgstr "Enviar"
-
-#: .\templates\contact.html:56 .\templates\dashboard\base.html:19
-#: .\templates\index.html:40 .\templates\registration\base.html:25
-#: .\templates\terms.html:50 .\templates\user.html:192
-msgid "Home"
-msgstr "Home"
-
-#: .\templates\contact.html:57 .\templates\index.html:41
-#: .\templates\registration\base.html:26 .\templates\terms.html:51
-#: .\templates\user.html:193
-msgid "Panel"
-msgstr "Painel"
-
-#: .\templates\contact.html:58 .\templates\index.html:42
-#: .\templates\registration\base.html:27 .\templates\registration\login.html:25
-#: .\templates\terms.html:52 .\templates\user.html:194
-msgid "Login"
-msgstr "Login"
-
-#: .\templates\contact.html:59 .\templates\index.html:43
-#: .\templates\registration\base.html:28
-#: .\templates\registration\register.html:25
-#: .\templates\registration\register.html:28 .\templates\terms.html:53
-#: .\templates\user.html:195
-#, fuzzy
-#| msgid "Registrar"
-msgid "Register"
-msgstr "Registrar-se"
-
-#: .\templates\contact.html:61 .\templates\index.html:45
-#: .\templates\registration\base.html:30 .\templates\terms.html:32
-#: .\templates\terms.html:55 .\templates\user.html:197
-msgid "Terms"
-msgstr "Termos"
 
 #: .\templates\dashboard\administration.html:8
 #: .\templates\dashboard\administration.html:14
@@ -165,6 +193,12 @@ msgid "Administration Panel"
 msgstr "Administração"
 
 #: .\templates\dashboard\administration.html:31
+#, fuzzy
+#| msgid "Social Media:"
+msgid "Social Media"
+msgstr "Rede Social:"
+
+#: .\templates\dashboard\administration.html:31
 #: .\templates\dashboard\social_media_list.html:28
 msgid "Social Medias"
 msgstr ""
@@ -173,21 +207,33 @@ msgstr ""
 msgid "Check, add and delete social medias."
 msgstr ""
 
-#: .\templates\dashboard\base.html:20
-msgid "Profile"
+#: .\templates\dashboard\administration.html:36
+msgid "Users"
 msgstr ""
 
-#: .\templates\dashboard\base.html:21 .\templates\user.html:9
-#: .\templates\user.html:163 .\templates\user.html:170
+#: .\templates\dashboard\administration.html:37
+msgid "Check, add and edit users and permissions."
+msgstr ""
+
+#: .\templates\dashboard\base.html:20
+msgid "Your page"
+msgstr "Minha pagina"
+
+#: .\templates\dashboard\base.html:21
+msgid "Profile"
+msgstr "Perfil"
+
+#: .\templates\dashboard\base.html:22 .\templates\user.html:9
+#: .\templates\user.html:171 .\templates\user.html:178
 msgid "Links"
 msgstr "Links"
 
-#: .\templates\dashboard\base.html:22 .\templates\registration\login.html:39
+#: .\templates\dashboard\base.html:23 .\templates\registration\login.html:39
 #: .\templates\registration\register.html:50
 msgid "Password"
-msgstr ""
+msgstr "Senha"
 
-#: .\templates\dashboard\base.html:24
+#: .\templates\dashboard\base.html:25
 #: .\templates\dashboard\social_media_form.html:27
 #: .\templates\dashboard\social_media_list.html:27
 #, fuzzy
@@ -195,7 +241,7 @@ msgstr ""
 msgid "Administration"
 msgstr "Administração"
 
-#: .\templates\dashboard\base.html:26
+#: .\templates\dashboard\base.html:31 .\templates\dashboard\base.html:32
 msgid "Logout"
 msgstr ""
 
@@ -219,7 +265,7 @@ msgid "Change password"
 msgstr ""
 
 #: .\templates\dashboard\change_password.html:56
-#: .\templates\dashboard\profile.html:53
+#: .\templates\dashboard\profile.html:55
 #: .\templates\dashboard\social_media_form.html:46
 msgid "Save"
 msgstr ""
@@ -268,7 +314,7 @@ msgstr "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
 msgid "Profile Links - fmartns.dev"
 msgstr "Login - fmartns.dev"
 
-#: .\templates\dashboard\links.html:23 .\templates\dashboard\profile.html:26
+#: .\templates\dashboard\links.html:23 .\templates\dashboard\profile.html:28
 msgid "Profile Preferences"
 msgstr "Preferências do Perfil"
 
@@ -313,45 +359,45 @@ msgstr "Painel - fmartns.dev | Portal de Tecnologia e Portfólio de Links."
 msgid "Profile Preferences - fmartns.dev"
 msgstr "Painel - fmartns.dev"
 
-#: .\templates\dashboard\profile.html:23
+#: .\templates\dashboard\profile.html:25
 #, fuzzy
 #| msgid "Preferências"
 msgid "Preferences"
 msgstr "Preferências"
 
-#: .\templates\dashboard\profile.html:29
+#: .\templates\dashboard\profile.html:31
 msgid "First name:"
 msgstr "Nome:"
 
-#: .\templates\dashboard\profile.html:32
+#: .\templates\dashboard\profile.html:34
 msgid "Last name:"
 msgstr "Sobrenome:"
 
-#: .\templates\dashboard\profile.html:35
+#: .\templates\dashboard\profile.html:37
 msgid "Job:"
 msgstr "Cargo:"
 
-#: .\templates\dashboard\profile.html:38
+#: .\templates\dashboard\profile.html:40
 msgid "Is student:"
 msgstr "É Estudante:"
 
-#: .\templates\dashboard\profile.html:40
+#: .\templates\dashboard\profile.html:42
 msgid "Yes"
 msgstr "Sim"
 
-#: .\templates\dashboard\profile.html:41
+#: .\templates\dashboard\profile.html:43
 msgid "No"
 msgstr "Não"
 
-#: .\templates\dashboard\profile.html:44
+#: .\templates\dashboard\profile.html:46
 msgid "Primary color:"
 msgstr "Cor principal:"
 
-#: .\templates\dashboard\profile.html:47
+#: .\templates\dashboard\profile.html:49
 msgid "Secondary color:"
 msgstr "Cor secundária:"
 
-#: .\templates\dashboard\profile.html:50
+#: .\templates\dashboard\profile.html:52
 msgid "Font color:"
 msgstr "Cor das fontes e icones:"
 
@@ -408,7 +454,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: .\templates\index.html:8
+#: .\templates\helloworld.html:8 .\templates\index.html:8
 msgid "Technology portal"
 msgstr ""
 
@@ -617,16 +663,16 @@ msgstr "Reservamos o direito de encerrar sua conta por violações."
 msgid "Thanks for choosing our site!"
 msgstr "Obrigado por escolher nosso site!"
 
-#: .\templates\user.html:159 .\templates\user.html:164
-#: .\templates\user.html:171
+#: .\templates\user.html:167 .\templates\user.html:172
+#: .\templates\user.html:179
 msgid "User links page for"
 msgstr ""
 
-#: .\templates\user.html:180
+#: .\templates\user.html:188
 msgid "Explore the links below:"
 msgstr "Explore os links abaixo:"
 
-#: .\templates\user.html:207
+#: .\templates\user.html:215
 msgid "Student"
 msgstr "Estudante"
 
