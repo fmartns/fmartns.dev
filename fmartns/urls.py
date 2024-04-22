@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from accounts import views
 from django.contrib.auth.views import logout_then_login
+from django.views.generic import TemplateView
 
 handler404 = 'main.views.page_not_found'
 
@@ -28,4 +29,5 @@ urlpatterns = [
     path('logout/', logout_then_login, name='logout'),
     path('accounts/register/', views.register, name='register'),
     path('dashboard/', include('dashboard.urls')),
+    path('helloworld/', TemplateView.as_view(template_name="helloworld.html"), name='helloworld'),
 ]
