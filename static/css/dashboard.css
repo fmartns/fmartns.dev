@@ -215,6 +215,25 @@ input[type="color"] {
     font-size: 12px;
 }
 
+.nav-repo {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    align-items: center;
+    margin: 10px 25px;
+}
+
+.nav-repo p {
+    margin: 0 5px;
+}
+
+header:hover .nav-repo {
+    display: flex;
+}
+
 /* Notifications */
 
 .notification {
