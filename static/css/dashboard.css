@@ -262,8 +262,8 @@ header:hover .nav-repo {
 
 /* Index */
 
-p {
-    margin: 0.5em 0;
+h1 {
+    margin-bottom: 0.5em 0;
 }
 
 .profile-link {
