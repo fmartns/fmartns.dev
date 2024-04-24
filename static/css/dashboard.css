@@ -262,6 +262,10 @@ header:hover .nav-repo {
 
 /* Index */
 
+p {
+    margin: 0.5em 0;
+}
+
 .profile-link {
     display: block;
     text-decoration: none;
@@ -284,6 +288,11 @@ header:hover .nav-repo {
 
 .dash-news a {
     color: black;
+}
+
+.dash-news p {
+    margin-top: 0.3em;
+    line-height: 1.3em;
 }
 
 .dash-news-author {
