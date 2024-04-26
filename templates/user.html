@@ -86,7 +86,7 @@
 		}
 
 		img {
-			width: 10r0px;
+			width: 100px;
 		}
 
 		.icon{
@@ -97,6 +97,15 @@
 		}
 
 		.icon:hover{
+			{{ user_profile.primary_color|to_css_filter }};
+		}
+
+		.copy{
+			{{ user_profile.font_color|to_css_filter }};
+			color: {{ user_profile.font_color }};
+		}
+
+		.copy:hover{
 			{{ user_profile.primary_color|to_css_filter }};
 		}
 
@@ -306,7 +315,7 @@
 	});
 
 	document.addEventListener('keydown', function (event) {
-		if (event.key === 'l' || event.key === 'L') {
+		if (event.key === 'e' || event.key === 'E') {
 			createRain();
 		}
 	});
