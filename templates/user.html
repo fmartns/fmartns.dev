@@ -85,14 +85,18 @@
 			width: 0;
 		}
 
-		img{
+		img {
+			width: 10r0px;
+		}
+
+		.icon{
 			margin: 1em;
 			height: 1.5em;
 			{{ user_profile.font_color|to_css_filter }};
 			color: {{ user_profile.font_color }};
 		}
 
-		img:hover{
+		.icon:hover{
 			{{ user_profile.primary_color|to_css_filter }};
 		}
 
@@ -269,6 +273,26 @@
 		audio.play();
 	}
 
+	function createRain() {
+		var img = document.createElement('img');
+		img.src = "{% static 'img/elon.png' %}"; // substitua pelo caminho correto do seu arquivo PNG
+		img.style.position = 'fixed';
+		img.style.top = Math.random() * window.innerHeight + 'px'; // posição inicial aleatória
+		img.style.left = Math.random() * window.innerWidth + 'px'; // posição inicial aleatória
+		document.body.appendChild(img);
+
+		function fall() {
+			img.style.top = parseInt(img.style.top) + 1 + 'px'; // faz a imagem cair para baixo
+			if (parseInt(img.style.top) < window.innerHeight) {
+				requestAnimationFrame(fall); // continua a animação se a imagem ainda não saiu da tela
+			} else {
+				document.body.removeChild(img); // remove a imagem se ela saiu da tela
+			}
+		}
+
+		fall();
+	}
+
 	document.addEventListener('keydown', function (event) {
 		if (event.key === 'm' || event.key === 'M') {
 			playCoinSound();
@@ -280,6 +304,13 @@
 			playMusic();
 		}
 	});
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'l' || event.key === 'L') {
+			createRain();
+		}
+	});
+
 
 	document.addEventListener('keydown', function(event) {
 		if (event.key === 's' || event.key === 'S') {
