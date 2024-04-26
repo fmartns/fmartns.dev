@@ -293,9 +293,69 @@
 		audio.play();
 	}
 
-	function createRain() {
+	function createElonRain() {
 		var img = document.createElement('img');
 		img.src = "{% static 'img/elon.png' %}"; // substitua pelo caminho correto do seu arquivo PNG
+		img.style.position = 'fixed';
+		img.style.top = Math.random() * window.innerHeight + 'px'; // posição inicial aleatória
+		img.style.left = Math.random() * window.innerWidth + 'px'; // posição inicial aleatória
+		document.body.appendChild(img);
+
+		function fall() {
+			img.style.top = parseInt(img.style.top) + 1 + 'px'; // faz a imagem cair para baixo
+			if (parseInt(img.style.top) < window.innerHeight) {
+				requestAnimationFrame(fall); // continua a animação se a imagem ainda não saiu da tela
+			} else {
+				document.body.removeChild(img); // remove a imagem se ela saiu da tela
+			}
+		}
+
+		fall();
+	}
+
+	function createXandaoRain() {
+		var img = document.createElement('img');
+		img.src = "{% static 'img/xandao.png' %}"; // substitua pelo caminho correto do seu arquivo PNG
+		img.style.position = 'fixed';
+		img.style.top = Math.random() * window.innerHeight + 'px'; // posição inicial aleatória
+		img.style.left = Math.random() * window.innerWidth + 'px'; // posição inicial aleatória
+		document.body.appendChild(img);
+
+		function fall() {
+			img.style.top = parseInt(img.style.top) + 1 + 'px'; // faz a imagem cair para baixo
+			if (parseInt(img.style.top) < window.innerHeight) {
+				requestAnimationFrame(fall); // continua a animação se a imagem ainda não saiu da tela
+			} else {
+				document.body.removeChild(img); // remove a imagem se ela saiu da tela
+			}
+		}
+
+		fall();
+	}
+
+	function createLulaRain() {
+		var img = document.createElement('img');
+		img.src = "{% static 'img/lula.png' %}"; // substitua pelo caminho correto do seu arquivo PNG
+		img.style.position = 'fixed';
+		img.style.top = Math.random() * window.innerHeight + 'px'; // posição inicial aleatória
+		img.style.left = Math.random() * window.innerWidth + 'px'; // posição inicial aleatória
+		document.body.appendChild(img);
+
+		function fall() {
+			img.style.top = parseInt(img.style.top) + 1 + 'px'; // faz a imagem cair para baixo
+			if (parseInt(img.style.top) < window.innerHeight) {
+				requestAnimationFrame(fall); // continua a animação se a imagem ainda não saiu da tela
+			} else {
+				document.body.removeChild(img); // remove a imagem se ela saiu da tela
+			}
+		}
+
+		fall();
+	}
+	
+	function createBolsonaroRain() {
+		var img = document.createElement('img');
+		img.src = "{% static 'img/bolsonaro.png' %}"; // substitua pelo caminho correto do seu arquivo PNG
 		img.style.position = 'fixed';
 		img.style.top = Math.random() * window.innerHeight + 'px'; // posição inicial aleatória
 		img.style.left = Math.random() * window.innerWidth + 'px'; // posição inicial aleatória
@@ -327,16 +387,33 @@
 
 	document.addEventListener('keydown', function (event) {
 		if (event.key === 'e' || event.key === 'E') {
-			createRain();
+			createElonRain();
+		}
+	});
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'r' || event.key === 'R') {
+			invertContainer();
+		}
+	});
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'b' || event.key === 'B') {
+			createBolsonaroRain();
+		}
+	});
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'x' || event.key === 'X') {
+			createXandaoRain();
 		}
 	});
 
 	document.addEventListener('keydown', function (event) {
 		if (event.key === 'l' || event.key === 'L') {
-			invertContainer();
+			createLulaRain();
 		}
 	});
-
 
 	document.addEventListener('keydown', function(event) {
 		if (event.key === 's' || event.key === 'S') {
