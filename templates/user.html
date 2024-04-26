@@ -264,9 +264,20 @@
 		audio.play();
 	}
 
+	function playMusic() {
+		const audio = new Audio('/static/audio/music.mp3');
+		audio.play();
+	}
+
 	document.addEventListener('keydown', function (event) {
 		if (event.key === 'm' || event.key === 'M') {
 			playCoinSound();
+		}
+	});
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'h' || event.key === 'H') {
+			playMusic();
 		}
 	});
 
