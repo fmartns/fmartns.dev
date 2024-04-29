@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    {% load static %}
+    {% load i18n %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>fmartns.dev | {% trans "Technology portal" %}</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <meta name="description" content='{% trans "fmartns.dev | Your platform for storing links and your daily technology news portal." %}'>
+    <meta name="author" content="Filipe Martins">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <!-- Tags Open Graph -->
+    <meta property="og:title" content='{% trans "fmartns.dev | Technology portal" %}'>
+    <meta property="og:description" content='{% trans "fmartns.dev | Your platform for storing links and your daily technology news portal." %}'>
+    <meta property="og:image" content="{% static 'img/banner.png' %}">
+    <meta property="og:url" content="https://fmartns.dev">
+    <meta property="og:type" content="site">
+    <!-- Tags do Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@fmartnss">
+    <meta name="twitter:title" content='{% trans "fmartns.dev | Technology portal" %}'>
+    <meta name="twitter:description" content='{% trans "fmartns.dev | Your platform for storing links and your daily technology news portal." %}'>
+    <meta name="twitter:image" content="{% static 'img/banner.png' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+    <script>
+        var endDate = moment.tz("2024-08-04 00:00:00", "America/Sao_Paulo");
+
+            var countdown = setInterval(function() {
+                var now = moment.tz("America/Sao_Paulo");
+
+                var distance = moment.duration(endDate.diff(now));
+
+                var days = Math.floor(distance.asDays());
+                var hours = distance.hours();
+                var minutes = distance.minutes();
+                var seconds = distance.seconds();
+
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+                if (distance <= 0) {
+                    clearInterval(countdown);
+                    document.getElementById("countdown").innerHTML = "Férias!";
+                }
+            }, 1000);
+    </script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container">
+            <h4>Dias restantes férias da Silvia:</h4>
+            <div cla id="countdown"></div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+                <li><a href="{% url 'dashboard' %}">{% trans 'Panel' %}</a></li>
+                <li><a href="{% url 'login' %}">{% trans 'Login' %}</a></li>
+                <li><a href="{% url 'register' %}">{% trans 'Register' %}</a></li>
+                <li><a href="{% url 'contact' %}">{% trans 'Contact' %}</a></li>
+                <li><a href="{% url 'terms' %}">{% trans 'Terms' %}</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

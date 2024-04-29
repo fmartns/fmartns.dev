@@ -31,4 +31,5 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     path('helloworld/', TemplateView.as_view(template_name="helloworld.html"), name='helloworld'),
     path('vacation/', TemplateView.as_view(template_name="vacation.html"), name='vacation'),
+    path('silvia/', TemplateView.as_view(template_name="silvia.html"), name='vacation'),
 ]
