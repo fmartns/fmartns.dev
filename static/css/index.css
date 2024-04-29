@@ -72,3 +72,16 @@ footer nav ul li a {
 footer nav ul li a:hover {
 	color: #10f0de;
 }
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+#countdown {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    color: #10f0de;
+    font-weight: bold;
+}
