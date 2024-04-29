@@ -77,6 +77,8 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
     color: #fff;
+    text-justify: center;
+    align-items: center;
 }
 
 #countdown {
@@ -84,4 +86,6 @@ h4 {
     font-size: 3.5em;
     color: #10f0de;
     font-weight: bold;
+    text-justify: center;
+    align-items: center;
 }
