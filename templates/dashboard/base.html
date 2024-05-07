@@ -5,44 +5,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% block meta_tags %}{% endblock %}
     <title>{% block title %}{% endblock %} | fmartns.dev</title>
     <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
-    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <header>
-        <a href="{% url 'index' %}" class="fm"><h1>f<span>m</span></h1></a>
-        <a href="{% url 'index' %}" class="fmartnsdev"><h1>fmartns<span>.dev</span></h1></a>
-        <nav>
-            <ul>
-                <li><a href="{% url 'dashboard' %}"><img src="{% static 'icons/home.svg' %}" alt="{% trans 'Home' %}"><p>{% trans 'Home' %}</p></a></li>
-                <li><a href="{% url 'user_links_page' user.username %}" target="_blank"><img src="{% static 'icons/page.svg' %}" alt="{% trans 'Your page' %}"><p>{% trans 'Your page' %}</p></a></li>
-                <li><a href="{% url 'manage_preferences' %}"><img src="{% static 'icons/profile.svg' %}" alt="{% trans 'Profile' %}"><p>{{ user.username }}</p></a></li>
-                <li><a href="{% url 'manage_social_media' %}"><img src="{% static 'icons/link.svg' %}" alt="{% trans 'Links' %}"><p>{% trans 'Links' %}</p></a></li>
-                <li><a href="{% url 'change_password' %}"><img src="{% static 'icons/lock.svg' %}" alt="{% trans 'Password' %}"><p>{% trans 'Password' %}</p></a></li>
-                {% if user.is_superuser %}
-                    <li><a href="{% url 'administration' %}"><img src="{% static 'icons/gear.svg' %}" alt="{% trans 'Administration' %}"><p>{% trans 'Administration' %}</p></a></li>
-                {% endif %}
-                <li>
-                    <form method="post" action="{% url 'logout' %}">
-                        {% csrf_token %}
-                        <button type="submit">
-                            <img src="{% static 'icons/logout.svg' %}" alt="{% trans 'Logout' %}">
-                            <p>{% trans 'Logout' %}</p>
-                        </button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-        <a class="nav-repo" target="_blank" href="https://github.com/fmartns/fmartns.dev"><img src="{% static 'icons/github.svg' %}" alt="Github Repo"><p> Beta Version</p></a>
-    </header>
-    <main>
-        <div class="accounts-container">
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button id="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">fmartns<span>.dev</span></a>
+                </div>
+            </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        <a href="{% url 'dashboard' %}" class="sidebar-link">
+                            <i class="bi bi-speedometer2"></i>
+                            <span>{% trans 'Dashboard' %}</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="{% url 'user_links_page' user.username %}" target="_blank" class="sidebar-link">
+                            <i class="bi bi-person-badge"></i>
+                            <span>{% trans 'Profile page' %}</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="{% url 'manage_preferences' %}" class="sidebar-link">
+                            <i class="bi bi-gear-fill"></i>
+                            <span>{% trans 'Profile preferences' %}</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="{% url 'manage_social_media' %}" class="sidebar-link">
+                            <i class="bi bi-link-45deg"></i>
+                            <span>{% trans 'Links' %}</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="{% url 'change_password' %}" class="sidebar-link">
+                            <i class="bi bi-lock-fill"></i>
+                            <span>{% trans 'Change password' %}</span>
+                        </a>
+                    </li>
+                    {% if user.is_superuser %}
+                    <li class="sidebar-item">
+                        <a href="{% url 'administration' %}" class="sidebar-link">
+                            <i class="bi bi-person-fill-gear"></i>
+                            <span>{% trans 'Administration' %}</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    <li class="sidebar-item">
+                        <form action="{% url 'logout' %}" method="post">
+                            {% csrf_token %}
+                            <button class="logout-btn sidebar-link" type="submit">
+                                <i class="bi bi-box-arrow-left"></i>
+                                <span>{% trans 'Logout'%}</span>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="siderbar-footer">
+                    
+                </div>
+        </aside>
+        <div class="main p-3">
             {% block content %}{% endblock %}
         </div>
-    </main>
-    <footer>
-	</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="{% static 'js/sidebar.js' %}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    // Ativação/inativação
+    $('.toggle-active').change(function() {
+        var id = $(this).data('id');
+        var isChecked = $(this).prop('checked');
+        $.ajax({
+            url: '{% url "toggle_active" %}',
+            type: 'POST',
+            data: {
+                'id': id,
+                'is_active': isChecked ? 'True' : 'False',
+                'csrfmiddlewaretoken': '{{ csrf_token }}'
+            },
+            success: function(response) {
+                // Atualizar a interface conforme necessário
+            }
+        });
+    });
+
+    $('.delete-link').click(function() {
+        var id = $(this).data('id');
+        $.ajax({
+            url: '{% url "delete_link" %}',
+            type: 'POST',
+            data: {
+                'id': id,
+                'csrfmiddlewaretoken': '{{ csrf_token }}'
+            },
+            success: function(response) {
+                // Remover o item excluído da interface
+                $('[data-id="' + id + '"]').remove();
+                // Adicionar um evento de conclusão de animação ao modal
+                $('#deleteLink' + id).on('hidden.bs.modal', function (e) {
+                    // Remover o modal da DOM após a animação de ocultar ser concluída
+                    $(this).remove();
+                });
+                // Fechar o modal
+                $('#deleteLink' + id).modal('hide');
+                console.log(response);
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                console.error(xhr.responseText);
+            }
+        });
+    });
+
+    $(document).ready(function() {
+    $(".sortable").sortable({
+        handle: '.grip-handle',
+        update: function(event, ui) {
+            var newOrder = $(this).sortable('toArray', { attribute: 'data-id' });
+            $.ajax({
+                url: '{% url "reorder_links" %}',
+                type: 'POST',
+                data: {
+                    'draggable-element': newOrder,
+                    'csrfmiddlewaretoken': '{{ csrf_token }}'
+                },
+                success: function(response) {
+                    console.log(response.message);
+                },
+                error: function(xhr, textStatus, errorThrown) {
+                    console.error(xhr.responseText);
+                }
+            });
+        }
+    });
+});
+
+
+
+
+
+</script>
+
+    
 </body>
 </html>

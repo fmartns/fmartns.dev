@@ -25,39 +25,55 @@
 {% block title %} {% trans 'Preferences' %} {% endblock %}
 
 {% block content %}
-  <h1>{% trans 'Profile Preferences' %}</h1>
-  <form method="post">
-    {% csrf_token %}
-    <label for="id_first_name">{% trans 'First name:' %}</label> 
-    <input type="text" id="id_first_name" name="{{ form.first_name.name }}" value="{{ form.first_name.value }}" placeholder="Filipe">
-
-    <label for="id_last_name">{% trans 'Last name:' %}</label>
-    <input type="text" id="id_last_name" name="{{ form.last_name.name }}" value="{{ form.last_name.value }}" placeholder="Martins">
-
-    <label for="id_job">{% trans 'Job:' %}</label>
-    <input type="text" id="id_job" name="{{ form.job.name }}" value="{{ form.job.value }}" placeholder="Developer">
-
-    <label for="id_is_student">{% trans 'Is student:' %}</label>
-    <select id="id_is_student" name="{{ form.is_student.name }}">
-      <option value=True {% if form.is_student.value == True %}selected{% endif %}>{% trans 'Yes' %}</option>
-      <option value=False {% if form.is_student.value == False %}selected{% endif %}>{% trans 'No' %}</option>
-    </select>
-
-    <label for="id_primary_color">{% trans 'Primary color:' %}</label>
-    <input type="color" id="id_primary_color" name="{{ form.primary_color.name }}" value="{{ form.primary_color.value }}">
-
-    <label for="id_secondary_color">{% trans 'Secondary color:' %}</label>
-    <input type="color" id="id_secondary_color" name="{{ form.secondary_color.name }}" value="{{ form.secondary_color.value }}">
-
-    <label for="id_font_color">{% trans 'Font color:' %}</label>
-    <input type="color" id="id_font_color" name="{{ form.font_color.name }}" value="{{ form.font_color.value }}">
-
-<input class="save-button" type="submit" value="{% trans 'Save' %}">
-</form>
-{% for message in messages %}
-    <div class="notification">
-        {{ message }}
-        <div class="progress-bar"></div>
+  <h4>{% trans 'Profile Preferences' %}</h4>
+  {% for message in messages %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>{% trans 'Sucess! ' %}</strong>{{ message }}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
-{% endfor %}
+  {% endfor %}
+  <form method="post" class="mt-4">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="id_first_name">{% trans 'First name:' %}</label> 
+      <input type="text" class="form-control" id="id_first_name" name="{{ form.first_name.name }}" value="{{ form.first_name.value }}" placeholder="Filipe">
+    </div>
+
+    <div class="form-group">
+      <label for="id_last_name">{% trans 'Last name:' %}</label>
+      <input type="text" class="form-control" id="id_last_name" name="{{ form.last_name.name }}" value="{{ form.last_name.value }}" placeholder="Martins">
+    </div>
+
+    <div class="form-group">
+      <label for="id_job">{% trans 'Job:' %}</label>
+      <input type="text" class="form-control" id="id_job" name="{{ form.job.name }}" value="{{ form.job.value }}" placeholder="Developer">
+    </div>
+
+    <div class="form-group">
+      <label for="id_is_student">{% trans 'Is student:' %}</label>
+      <select class="form-control" id="id_is_student" name="{{ form.is_student.name }}">
+        <option value=True {% if form.is_student.value == True %}selected{% endif %}>{% trans 'Yes' %}</option>
+        <option value=False {% if form.is_student.value == False %}selected{% endif %}>{% trans 'No' %}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="id_primary_color">{% trans 'Primary color:' %}</label>
+      <input type="color" class="form-control" id="id_primary_color" name="{{ form.primary_color.name }}" value="{{ form.primary_color.value }}">
+    </div>
+
+    <div class="form-group">
+      <label for="id_secondary_color">{% trans 'Secondary color:' %}</label>
+      <input type="color" class="form-control" id="id_secondary_color" name="{{ form.secondary_color.name }}" value="{{ form.secondary_color.value }}">
+    </div>
+
+    <div class="form-group">
+      <label for="id_font_color">{% trans 'Font color:' %}</label>
+      <input type="color" class="form-control" id="id_font_color" name="{{ form.font_color.name }}" value="{{ form.font_color.value }}">
+    </div>
+
+    <button class="btn btn-primary" type="submit">{% trans 'Save' %}</button>
+  </form>
 {% endblock %}

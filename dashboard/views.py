@@ -8,6 +8,9 @@ from django.contrib.auth.views import PasswordChangeView
 from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy as _
+from django.http import JsonResponse
+import json  # Adicione esta linha
+from django.db import models
 
 @login_required
 def dashboard (request):
@@ -62,6 +65,61 @@ def manage_social_media(request):
         form = UserSocialMediaForm(user=request.user)
 
     return render(request, 'dashboard/links.html', {'user_social_media': user_social_media, 'form': form})
+
+# Adicione estas views para lidar com a ativação/inativação e exclusão
+@login_required
+def toggle_active(request):
+    if request.method == 'POST':
+        # Obtém o ID do item a ser ativado ou desativado da solicitação POST
+        item_id = request.POST.get('id')
+
+        try:
+            # Tenta obter o objeto UserSocialMedia com o ID fornecido
+            user_social_media = UserSocialMedia.objects.get(id=item_id)
+            
+            # Alterna o estado is_active do item
+            user_social_media.is_active = not user_social_media.is_active
+            user_social_media.save()
+
+            return JsonResponse({'success': True})  # Retorne uma resposta JSON indicando sucesso
+        except UserSocialMedia.DoesNotExist:
+            return JsonResponse({'error': 'UserSocialMedia item does not exist'})  # Se o item não for encontrado, retorne um erro JSON
+    else:
+        return JsonResponse({'error': 'Only POST requests are allowed'})  # Se não for uma solicitação POST, retorne um erro JSON
+
+@login_required
+def delete_link(request):
+    if request.method == 'POST':
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+            id = request.POST.get('id')
+            try:
+                user_social_media = UserSocialMedia.objects.get(id=id)
+                position = user_social_media.position
+                user_social_media.delete()
+                
+                # Reordenar os itens restantes
+                UserSocialMedia.objects.filter(position__gt=position).update(position=models.F('position') - 1)
+                
+                return JsonResponse({'message': 'Success'})
+            except UserSocialMedia.DoesNotExist:
+                return JsonResponse({'message': 'Item not found'}, status=404)
+    return JsonResponse({'message': 'Failed'}, status=400)
+
+@login_required
+def reorder_links(request):
+    if request.method == 'POST':
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+            new_order = request.POST.getlist('draggable-element')
+            # Atualizar a ordem no banco de dados
+            for index, item_id in enumerate(new_order):
+                try:
+                    user_social_media = UserSocialMedia.objects.get(id=item_id)
+                    user_social_media.position = index
+                    user_social_media.save()
+                except UserSocialMedia.DoesNotExist:
+                    return JsonResponse({'message': 'Item not found'}, status=404)
+            return JsonResponse({'message': 'Success'})
+    return JsonResponse({'message': 'Failed'}, status=400)
 
 @login_required
 def user_links(request):

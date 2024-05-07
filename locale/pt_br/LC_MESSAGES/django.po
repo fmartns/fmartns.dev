@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-22 09:36-0300\n"
+"POT-Creation-Date: 2024-04-30 16:19-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,11 @@ msgstr ""
 #: .\templates\contact.html:23 .\templates\helloworld.html:9
 #: .\templates\helloworld.html:14 .\templates\helloworld.html:22
 #: .\templates\index.html:10 .\templates\index.html:15
-#: .\templates\index.html:23 .\templates\terms.html:10
-#: .\templates\terms.html:15 .\templates\terms.html:23
+#: .\templates\index.html:23 .\templates\silvia.html:10
+#: .\templates\silvia.html:15 .\templates\silvia.html:23
+#: .\templates\terms.html:10 .\templates\terms.html:15
+#: .\templates\terms.html:23 .\templates\vacation.html:10
+#: .\templates\vacation.html:15 .\templates\vacation.html:23
 #, fuzzy
 #| msgid ""
 #| "fmartns.dev | Sua plataforma para armazenar links e seu portal de "
@@ -67,8 +70,10 @@ msgstr ""
 #: .\templates\404.html:14 .\templates\404.html:22 .\templates\contact.html:14
 #: .\templates\contact.html:22 .\templates\helloworld.html:13
 #: .\templates\helloworld.html:21 .\templates\index.html:14
-#: .\templates\index.html:22 .\templates\terms.html:14
-#: .\templates\terms.html:22
+#: .\templates\index.html:22 .\templates\silvia.html:14
+#: .\templates\silvia.html:22 .\templates\terms.html:14
+#: .\templates\terms.html:22 .\templates\vacation.html:14
+#: .\templates\vacation.html:22
 #, fuzzy
 #| msgid "fmartns.dev | Portal de tecnologia"
 msgid "fmartns.dev | Technology portal"
@@ -80,29 +85,33 @@ msgstr ""
 
 #: .\templates\404.html:39 .\templates\contact.html:56
 #: .\templates\dashboard\base.html:19 .\templates\index.html:40
-#: .\templates\registration\base.html:25 .\templates\terms.html:50
-#: .\templates\user.html:200
+#: .\templates\registration\base.html:25 .\templates\silvia.html:63
+#: .\templates\terms.html:50 .\templates\user.html:213
+#: .\templates\vacation.html:43
 msgid "Home"
 msgstr "Home"
 
 #: .\templates\404.html:40 .\templates\contact.html:57
 #: .\templates\index.html:41 .\templates\registration\base.html:26
-#: .\templates\terms.html:51 .\templates\user.html:201
+#: .\templates\silvia.html:64 .\templates\terms.html:51
+#: .\templates\user.html:214 .\templates\vacation.html:44
 msgid "Panel"
 msgstr "Painel"
 
 #: .\templates\404.html:41 .\templates\contact.html:58
 #: .\templates\index.html:42 .\templates\registration\base.html:27
-#: .\templates\registration\login.html:25 .\templates\terms.html:52
-#: .\templates\user.html:202
+#: .\templates\registration\login.html:25 .\templates\silvia.html:65
+#: .\templates\terms.html:52 .\templates\user.html:215
+#: .\templates\vacation.html:45
 msgid "Login"
 msgstr "Login"
 
 #: .\templates\404.html:42 .\templates\contact.html:59
 #: .\templates\index.html:43 .\templates\registration\base.html:28
 #: .\templates\registration\register.html:25
-#: .\templates\registration\register.html:28 .\templates\terms.html:53
-#: .\templates\user.html:203
+#: .\templates\registration\register.html:28 .\templates\silvia.html:66
+#: .\templates\terms.html:53 .\templates\user.html:216
+#: .\templates\vacation.html:46
 #, fuzzy
 #| msgid "Registrar"
 msgid "Register"
@@ -110,15 +119,17 @@ msgstr "Registrar-se"
 
 #: .\templates\404.html:43 .\templates\contact.html:32
 #: .\templates\contact.html:60 .\templates\index.html:44
-#: .\templates\registration\base.html:29 .\templates\terms.html:54
-#: .\templates\user.html:204
+#: .\templates\registration\base.html:29 .\templates\silvia.html:67
+#: .\templates\terms.html:54 .\templates\user.html:217
+#: .\templates\vacation.html:47
 msgid "Contact"
 msgstr "Contato"
 
 #: .\templates\404.html:44 .\templates\contact.html:61
 #: .\templates\index.html:45 .\templates\registration\base.html:30
-#: .\templates\terms.html:32 .\templates\terms.html:55
-#: .\templates\user.html:205
+#: .\templates\silvia.html:68 .\templates\terms.html:32
+#: .\templates\terms.html:55 .\templates\user.html:218
+#: .\templates\vacation.html:48
 msgid "Terms"
 msgstr "Termos"
 
@@ -224,7 +235,7 @@ msgid "Profile"
 msgstr "Perfil"
 
 #: .\templates\dashboard\base.html:22 .\templates\user.html:9
-#: .\templates\user.html:171 .\templates\user.html:178
+#: .\templates\user.html:184 .\templates\user.html:191
 msgid "Links"
 msgstr "Links"
 
@@ -263,6 +274,27 @@ msgstr "Cadastro - fmartns.dev"
 #: .\templates\registration\password_reset_confirm.html:13
 msgid "Change password"
 msgstr ""
+
+#: .\templates\dashboard\change_password.html:45
+#: .\templates\dashboard\change_password.html:46
+#, fuzzy
+#| msgid "Password"
+msgid "Old password"
+msgstr "Senha"
+
+#: .\templates\dashboard\change_password.html:49
+#: .\templates\dashboard\change_password.html:50
+#, fuzzy
+#| msgid "Password"
+msgid "New password"
+msgstr "Senha"
+
+#: .\templates\dashboard\change_password.html:53
+#: .\templates\dashboard\change_password.html:54
+#, fuzzy
+#| msgid "Confirm Password"
+msgid "Confirm new password"
+msgstr "Confirmação de senha"
 
 #: .\templates\dashboard\change_password.html:56
 #: .\templates\dashboard\profile.html:55
@@ -455,8 +487,9 @@ msgid "Delete"
 msgstr ""
 
 #: .\templates\helloworld.html:8 .\templates\index.html:8
+#: .\templates\silvia.html:8 .\templates\vacation.html:8
 msgid "Technology portal"
-msgstr ""
+msgstr "Portal de Tecnologia"
 
 #: .\templates\index.html:33
 msgid "Share your links in a simple, fast, and useful way."
@@ -663,18 +696,22 @@ msgstr "Reservamos o direito de encerrar sua conta por violações."
 msgid "Thanks for choosing our site!"
 msgstr "Obrigado por escolher nosso site!"
 
-#: .\templates\user.html:167 .\templates\user.html:172
-#: .\templates\user.html:179
+#: .\templates\user.html:180 .\templates\user.html:185
+#: .\templates\user.html:192
 msgid "User links page for"
 msgstr ""
 
-#: .\templates\user.html:188
+#: .\templates\user.html:201
 msgid "Explore the links below:"
 msgstr "Explore os links abaixo:"
 
-#: .\templates\user.html:215
+#: .\templates\user.html:228
 msgid "Student"
 msgstr "Estudante"
+
+#: .\templates\vacation.html:36
+msgid "Time remaining for vacation:"
+msgstr "Tempo restante para férias:"
 
 #~ msgid "Enviar"
 #~ msgstr "Enviar"

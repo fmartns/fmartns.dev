@@ -24,13 +24,14 @@
 
 {% block content %}
 
-<h1>{% trans 'Dashboard' %}</h1>
+<h4>{% trans 'Dashboard' %}</h4>
 <p>{% trans 'Hello' %} {{ user.username }}! {% trans 'Welcome again' %}.</p>
 
-<div class="dash-news">
-    <h4 class="dash-news-title">{% trans 'New!' %}</h4>
-    <p>{% trans 'Hey Devs, we are very happy to share the launch of the beta version of fmartns.dev, now open source, enabling all of you to be part of this dream.' %}</p>
-    <p class="dash-news-author">- Filipe Martins</p>
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
 </div>
 
 {% endblock %}

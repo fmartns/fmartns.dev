@@ -23,51 +23,82 @@
 {% block title %} {% trans 'Profile Preferences' %} {% endblock %}
 
 {% block content %}
-  <h1>Profile Links</h1>
+  <h4>{% trans 'Profile Links' %}</h4>
   {% if form.errors %}
-      <ul class="error-warn">
-          {% for error in form.non_field_errors %}
-              <li>{{ error }}</li>
-          {% endfor %}
-          {% for field in form %}
-              {% for error in field.errors %}
-                  <li>{{ field.label }}: {{ error }}</li>
-              {% endfor %}
-          {% endfor %}
-      </ul>
+    <div class="alert alert-danger mt-4">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>{% trans 'Error!' %}</strong>
+        <ul class="error-warn">
+            {% for error in form.non_field_errors %}    
+            {{ error }}<br>
+            {% endfor %}
+            {% for field in form %}
+                {% for error in field.errors %}
+                {{ field.label }}: {{ error }}<br>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
   {% endif %}
-  <form method="post">
+  <form method="post" class="mt-4">
     {% csrf_token %}
-    
-  <label for="id_social_media">{% trans 'Social Media:' %}</label>
-  <select id="id_social_media" name="{{ form.social_media.name }}">
-      {% for social_media in form.social_media.field.queryset %}
-      <option value="{{ social_media.pk }}" {% if social_media.pk == form.social_media.value %}selected{% endif %}>{{ social_media }}</option>
-      {% endfor %}
-  </select>
-    
-  <label for="id_username">{% trans 'Username:' %}</label>
-  <input type="text" id="id_username" name="{{ form.username.name }}" value="" placeholder="{% trans 'Your username' %}">
-    
-  <button class="add-button" type="submit">{% trans 'Add' %}</button>
+    <div class="form-group">
+      <label for="id_social_media">{% trans 'Social Media:' %}</label>
+      <select class="form-control" id="id_social_media" name="{{ form.social_media.name }}">
+          {% for social_media in form.social_media.field.queryset %}
+            <option value="{{ social_media.pk }}" {% if social_media.pk == form.social_media.value %}selected{% endif %}>{{ social_media }}</option>
+          {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="id_username">{% trans 'Username:' %}</label>
+      <input type="text" class="form-control" id="id_username" name="{{ form.username.name }}" value="" placeholder="{% trans 'Your username' %}">
+    </div>
+    <button class="btn btn-primary" type="submit">{% trans 'Add' %}</button>
   </form>
-  <label>{% trans 'Current links:' %}</label>
-  <table class="profile-table">
-    <tbody>
-        {% for user_social in user_social_media %}
-        <tr>
-            <td><img src="/{{ user_social.social_media.icon }}" alt=""></td>
-            <td>{{ user_social.social_media.prefix }}{{ user_social.username }}</td>
-            <td>
-                <form method="post" action="{% url 'user_social_media_delete' user_social.id %}">
-                    {% csrf_token %}
-                        <button class="remove-button" type="submit" onclick="return confirm('Remove?')">{% trans 'Remove' %}</button>
-                  </form>
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-  </table>
-
+  <label class="mt-4">{% trans 'Current links:' %}</label>
+  <div class="sortable">
+  {% for user_social in user_social_media %}
+    <div class="row rounded draggable-element" style="height: 100px; background-color: #f5f5dc; width: 600px; margin: 16px; box-shadow: 0 0 4px rgba(0,0,0,0.2);" data-id="{{ user_social.id }}">
+        <div class="col-1 d-flex justify-content-center align-items-center grip-handle" style="cursor: pointer;">
+            <i class="bi bi-grip-vertical bi-lg" style="font-size: larger; color: #676B5F;"></i>
+        </div>
+        <div class="col-8">
+            <br>
+            <div class="row">
+                <strong class="text-dark">{{ user_social.social_media.name }}</strong>
+            </div>
+            <div>
+                <span class="text-body">{{ user_social.social_media.prefix }}{{ user_social.username }}</span>
+            </div>
+        </div>
+        <div class="col-3 d-flex justify-content-center align-items-center">
+            <label class="switch" style="margin-top: 10px;">
+                <input type="checkbox" {% if user_social.is_active %}checked{% endif %} class="toggle-active" data-id="{{ user_social.id }}">
+                <span class="slider round"></span>
+            </label>
+            <i class="bi bi-trash3-fill trash-icon" data-toggle="modal" data-target="#deleteLink{{ user_social.id }}"></i>
+        </div>
+    </div>
+    <div class="modal fade" id="deleteLink{{ user_social.id }}" tabindex="-1" aria-labelledby="deleteLinkLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteLinkLabel">Excluir link</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tem certeza que deseja excluir este link permanentemente?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger delete-link" data-dismiss="modal" data-id="{{ user_social.id }}">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
-

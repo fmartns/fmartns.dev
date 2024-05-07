@@ -23,14 +23,16 @@
 {% block title %} {% trans 'Dashboard' %} {% endblock %}
 
 {% block content %}
+<h4>{% trans 'Administration Panel' %}</h4>
 
-<h1>{% trans 'Administration Panel' %}</h1>
-
-<a class="admin-panel-link" href="{% url 'social_media_list' %}">
-<div class="admin-panel-option">
-    <h3><img src="{% static 'icons/person-bounding-box.svg' %}" alt="Social Medias">{% trans 'Social Medias' %}</h3>
-    <p>{% trans 'Check, add and delete social medias.' %}</p>
+<div class="row">
+  <div class="col-md-6">
+    <a href="{% url 'social_media_list' %}">
+      <div class="p-3 bg-light">
+          <h3><i class="bi bi-archive-fill mr-2"></i>{% trans 'Social Medias' %}</h3>
+          <p>{% trans 'Check, add and delete social medias.' %}</p>
+      </div>
+    </a>
+  </div>
 </div>
-</a>
-
 {% endblock %}

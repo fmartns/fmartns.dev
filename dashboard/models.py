@@ -13,6 +13,8 @@ class UserSocialMedia(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     social_media = models.ForeignKey(SocialMedia, on_delete=models.CASCADE)
     username = models.CharField(max_length=100)
+    is_active = models.BooleanField(default=True)
+    position = models.IntegerField(default=0)
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
