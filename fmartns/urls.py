@@ -19,6 +19,9 @@ from django.urls import path, include
 from accounts import views
 from django.contrib.auth.views import logout_then_login
 from django.views.generic import TemplateView
+from django.urls import re_path
+from django.views.static import serve
+from django.conf import settings
 
 handler404 = 'main.views.page_not_found'
 
@@ -32,4 +35,6 @@ urlpatterns = [
     path('helloworld/', TemplateView.as_view(template_name="helloworld.html"), name='helloworld'),
     path('vacation/', TemplateView.as_view(template_name="vacation.html"), name='vacation'),
     path('silvia/', TemplateView.as_view(template_name="silvia.html"), name='vacation'),
+    re_path(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
+    re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
