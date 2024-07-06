@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = "django-insecure-#vocdi*6mc!%(6itr(v#=!h44*rt6ll(zv0efph8*^gb&eqe$&
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['fmartns.dev', '167.114.65.130']
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
@@ -51,6 +52,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "dashboard.middleware.RedirectToDomainMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -127,11 +129,11 @@ LANGUAGES = [
 ]
 
 LOCALE_PATHS = [
-    BASE_DIR / "locale",
+    os.path.join(BASE_DIR, 'locale'),
 ]
 
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
 
 
@@ -148,10 +150,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
-# DEFAULT_FROM_EMAIL = ''
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_USE_SSL = 
-# EMAIL_HOST = ''
-# EMAIL_PORT = 
-# EMAIL_HOST_USER = ''
-# EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = 'hello@fmartns.dev'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtppro.zoho.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'hello@fmartns.dev'
+EMAIL_HOST_PASSWORD = 'G72Y3kA3EQ4'
